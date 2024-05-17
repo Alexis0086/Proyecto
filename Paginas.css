@@ -1,0 +1,42 @@
+
+.Contentprin{
+    background-image: url(Imagenes_Belgica/Atomium.jpg);
+    background-repeat: no-repeat;
+    background-size: 20cm 10cm;
+    margin-top: 150px;
+    margin-left: 100px;
+    border-style: ridge;
+    height: 10cm;
+    width: 20cm;
+    }
+
+    .ImgPrin{
+        margin-top: 25px;
+        margin-left: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 1000;
+        color: white;
+        font-size: 35px;
+    }
+
+    .Contentsec{
+        background-image: url(Imagenes_Belgica/Dinat.jpeg);
+    background-repeat: no-repeat;
+    background-size: 10cm 10cm;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-style: ridge;
+    height: 10cm;
+    width: 9cm;
+
+    }
+
+    .Dinantword{
+        margin-top: 25px;
+        margin-left: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 1000;
+        font-style: normal;
+        color: white;
+        font-size: 30px; 
+    }

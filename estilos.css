@@ -5,6 +5,7 @@
 }
 body {
 background-color: blanchedalmond;
+
  background-repeat: no-repeat;
   width: 100%;
   height: 100vb;
@@ -18,8 +19,12 @@ nav{
   padding-right: 5%;
   font-weight: bold;
 }
+.logo {
+  height: 5cm;
+  width: 2cm;
+}
 h1{
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 45px;
 }
 ul li{
@@ -34,11 +39,90 @@ a {
 a:hover{
   color: blue;
 }
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: aliceblue;
+}
+.titulo {
+  text-align: center;
+  font-size: 40px;
+padding-top: 50px;
+}
+.slider-box {
+  width: 128opx;
+  height: auto;
+  margin: 50px auto 0;
+}
+.slider-box .lista {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box .formato {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+.texto {
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 250px;
+  color: aliceblue;
+}
+.texto h2 {
+  font-size: 45px;
+  margin-bottom: 35px;
+}
+.slider-box img {
+width: 100%;
+}
+@keyframes slide {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+  
+  25% { margin-left: -100%;}
+  45% { margin-left: -100%;}
+  
+  50% { margin-left: -200%;}
+  70% { margin-left: -200%;}
+  
+  75% { margin-left: -300%;}
+  100% { margin-left: -300%;}
+}
 
-/* Sam */
+@media(max-width:991px) {
 
-/* Moiso */
-.ImagenPrincipal {
+body {
+  padding: 30px;
+}
+
+.slider-box{
+  width: 100%;
+}
+.texto {
+  top: 50px;
+  padding: 0 25px;
+}
+
+.texto h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
 
 }
-/* Moiso */
+.texto p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.texto p {
+  font-size: 15px;
+
+}
+
+}
