@@ -1,7 +1,44 @@
+/* Bri */
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    background: url();
+body {
+background-color: blanchedalmond;
+ background-repeat: no-repeat;
+  width: 100%;
+  height: 100vb;
 }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+}
+h1{
+  color: white;
+  font-size: 45px;
+}
+ul li{
+display: inline-block;
+padding: 0px 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: blue;
+}
+
+/* Sam */
+
+/* Moiso */
+.ImagenPrincipal {
+
+}
+/* Moiso */
