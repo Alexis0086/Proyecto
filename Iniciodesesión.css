@@ -1,39 +1,86 @@
-*{
+/* Agregar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-}
-body {
-background-color: black;
-background-image: url(Imagenes_Inicio/Inicio\,\ brit..jpeg);
- background-repeat: no-repeat;
- background-image: url(Emiratos_Arabes_Unidos/Paisaje_Oscar.webp);
- background-size: cover;
-
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-
-.divini{
-  position: relative;
-  margin-left: 650px;
-  margin-top: 200px;
-  background-color: rgb(19, 207, 192);
-  opacity: 90%;
-
-  height: 500px;
-  width: 500px;
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-p{
-  color: black;
-  font-size: 20pt;
+/* Encabezado */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
 }
 
-.pform{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15pt;
-    font-weight: bold;
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-input{
-  background-color: transparent;
+/* Estilos de los grupos de campos */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los iconos */
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/* Estilos de los campos de entrada */
+.form-group input {
+    padding: 15px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo de los campos de entrada al enfocar */
+.form-group input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Estilos del botón de envío */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo del botón de envío al pasar el cursor */
+button[type="submit"]:hover {
+    background-color: #555;
 }

@@ -1,58 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geografic Tour</title>
+    <title>Inicio de Sesión - Geographic Tour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="Iniciodesesión.css">
-
-    
-    <link rel="stylesheet"type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet"type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.css">
-    <script>src="bootstrap-5.3.3-dist/js/bootstrap.bundle.js"</script>
-    <script>src="/bootstrap-5.3.3-dist/js/bootstrap.min.js"</script>
-
-
 </head>
 <body>
-
-    
-   
-    <div class="divini">   
-      <div>
-        <h2>Registrarse</h2>
-        <form action=""method="post">
-           
-            <p class="pform">
-               <label class="lblform" for="">Ingrese el correo electronico</label> 
-                <input type="text"maxlength="13" size"50" name="" id="">
-            </p>
-            
-            <p class="pform">
-                <input type="file">
-            </p>
-            <p class="pform">
-                Contraseña:
-                <input type="contraseña" size="15">
-            </p>
-            <p class="pform">
-                Ingrese su nombre
-                <input type="text"maxlength="13" size"50" name="" id="">
-            </p>
-            <p class="pform">
-                Ingrese su nacionalidad
-                <input type="text"maxlength="13" size"50" name="" id="">
-            </p>
-            <P class="pform">
-                <label> Dejanos tus comentarios </label>
-                <textarea name="" id="" placeholder="Comentarios"></textarea>
-            </P>
-            <button type="button" class="btn btn-success">Success</button>
-
+    <div class="container">
+        <!--Contenido principal-->  
+        <div class="content">
+            <h1>Inicio de Sesión</h1>
+            <form>
+                <!-- Campo de nombre -->
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <!-- Campo de correo electrónico -->
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <!-- Campo de contraseña -->
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <!-- Campo de nacionalidad -->
+                <div class="form-group">
+                    <i class="fas fa-globe"></i>
+                    <input type="text" id="nationality" name="nationality" placeholder="Nacionalidad" required>
+                </div>
+                <!-- Botón de enviar -->
+                <button type="submit">Iniciar Sesión</button>
+            </form>
         </div>
-      </div>
-    
-
-           
+    </div>
 </body>
 </html>

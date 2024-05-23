@@ -19,10 +19,6 @@ nav{
   padding-right: 5%;
   font-weight: bold;
 }
-.logo {
-  height: 5cm;
-  width: 2cm;
-}
 h1{
   color: rgb(0, 0, 0);
   font-size: 45px;
@@ -80,8 +76,19 @@ padding-top: 50px;
   font-size: 45px;
   margin-bottom: 35px;
 }
-.slider-box img {
-width: 100%;
+.logo{
+ display: inline;
+ width: 120px;
+ height: 49px;
+}
+
+.menu{
+  font-size: 32px;
+  text-align: center;
+
+}
+.slider-box{
+width: 800%;
 }
 @keyframes slide {
   0% { margin-left: 0;}
@@ -123,6 +130,9 @@ body {
 .texto p {
   font-size: 15px;
 
+}
+.formato{
+  color: black;
 }
 
 }
