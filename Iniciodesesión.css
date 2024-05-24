@@ -1,86 +1,137 @@
-/* Agregar la fuente de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Importa la fuente Montserrat de Google Fonts */
 
-/* Estilos generales */
 body {
     font-family: 'Montserrat', sans-serif;
+    /* Establece la fuente Montserrat como fuente principal */
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    color: white;
+    /* Establece el color de texto como blanco */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* Centra el contenido verticalmente */
+    background-image: url(Emiratos_Arabes_Unidos/Paisaje_Oscar.webp);
+    /* Establece la imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el área visible */
+    background-position: center;
+    /* Centra la imagen de fondo */
 }
 
-/* Contenedor principal */
 .container {
     max-width: 600px;
+    /* Establece un ancho máximo de 600px para el contenedor */
     width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
     padding: 40px;
-    background-color: #fff;
+    /* Agrega un relleno interno de 40px */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Establece un fondo negro semitransparente */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave */
     border-radius: 10px;
+    /* Agrega un borde redondeado */
 }
 
-/* Encabezado */
 h1 {
     text-align: center;
-    color: #333;
+    /* Centra el título */
     margin-bottom: 30px;
+    /* Agrega un margen inferior de 30px */
 }
 
-/* Estilos del formulario */
 form {
     display: flex;
     flex-direction: column;
+    /* Apila los elementos del formulario verticalmente */
 }
 
-/* Estilos de los grupos de campos */
 .form-group {
     position: relative;
+    /* Establece un posicionamiento relativo */
     margin-bottom: 20px;
+    /* Agrega un margen inferior de 20px */
 }
 
-/* Estilos de los iconos */
 .form-group i {
     position: absolute;
+    /* Posiciona el icono de forma absoluta */
     top: 50%;
+    /* Centra verticalmente el icono */
     left: 15px;
+    /* Establece un margen izquierdo de 15px */
     transform: translateY(-50%);
+    /* Ajusta la posición vertical del icono */
     color: #888;
+    /* Establece el color del icono */
 }
 
-/* Estilos de los campos de entrada */
 .form-group input {
     padding: 15px 40px;
+    /* Agrega un relleno interno de 15px arriba/abajo y 40px izquierda/derecha */
     border: 1px solid #ddd;
+    /* Establece un borde sólido de 1px de color gris claro */
     border-radius: 5px;
+    /* Agrega un borde redondeado de 5px */
     font-size: 16px;
+    /* Establece el tamaño de fuente en 16px */
     width: 100%;
+    /* Hace que el campo ocupe todo el ancho disponible */
     box-sizing: border-box;
+    /* Incluye el relleno y el borde en el cálculo del ancho total */
     transition: border-color 0.3s ease-in-out;
+    /* Agrega una transición suave al cambiar el color del borde */
 }
 
-/* Estilo de los campos de entrada al enfocar */
 .form-group input:focus {
     outline: none;
+    /* Elimina el contorno de enfoque predeterminado */
     border-color: #333;
+    /* Cambia el color del borde al enfocar */
 }
 
-/* Estilos del botón de envío */
 button[type="submit"] {
     background-color: #333;
+    /* Establece el color de fondo del botón */
     color: #fff;
+    /* Establece el color de texto del botón */
     padding: 15px 20px;
+    /* Agrega un relleno interno de 15px arriba/abajo y 20px izquierda/derecha */
     border: none;
+    /* Elimina el borde del botón */
     border-radius: 5px;
+    /* Agrega un borde redondeado de 5px */
     font-size: 16px;
+    /* Establece el tamaño de fuente en 16px */
     cursor: pointer;
+    /* Cambia el cursor a una mano al pasar sobre el botón */
     transition: background-color 0.3s ease-in-out;
+    /* Agrega una transición suave al cambiar el color de fondo */
 }
 
-/* Estilo del botón de envío al pasar el cursor */
 button[type="submit"]:hover {
     background-color: #555;
+    /* Cambia el color de fondo del botón al pasar el cursor sobre él */
+}
+
+.register-link {
+    text-align: center;
+    /* Centra el enlace de registro */
+    margin-top: 20px;
+    /* Agrega un margen superior de 20px */
+}
+
+.register-link a {
+    color: #fff;
+    /* Establece el color del enlace como blanco */
+    text-decoration: none;
+    /* Elimina la subrayado del enlace */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    /* Agrega un subrayado al pasar el cursor sobre el enlace */
 }

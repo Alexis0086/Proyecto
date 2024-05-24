@@ -1,42 +1,140 @@
 <!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Establece el idioma del documento como español 
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Establece la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura la vista para dispositivos móviles -->
     <title>Inicio de Sesión - Geographic Tour</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="Iniciodesesión.css">
-</head>
-<body>
-    <div class="container">
-        <!--Contenido principal-->  
+    <!-- Título de la página -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Enlace a la biblioteca de iconos-->
+    <link rel="stylesheet" href="Iniciodesesión.css" />
+    <!-- Enlace al archivo CSS personalizado -->
+  </head>
+  <body>
+      <div class="container">
+        <!-- Contenedor principal -->
         <div class="content">
-            <h1>Inicio de Sesión</h1>
-            <form>
-                <!-- Campo de nombre -->
-                <div class="form-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                </div>
-                <!-- Campo de correo electrónico -->
-                <div class="form-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                </div>
-                <!-- Campo de contraseña -->
-                <div class="form-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                </div>
-                <!-- Campo de nacionalidad -->
-                <div class="form-group">
-                    <i class="fas fa-globe"></i>
-                    <input type="text" id="nationality" name="nationality" placeholder="Nacionalidad" required>
-                </div>
-                <!-- Botón de enviar -->
-                <button type="submit">Iniciar Sesión</button>
-            </form>
+          <!-- Sección de contenido principal -->
+          <h1>Inicia sesión en Geografic Tour</h1>
+          <!-- Título del formulario de inicio de sesión -->
+          <form>
+            <!-- Formulario de inicio de sesión -->
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-user"></i>
+              <!-- Icono de usuario -->
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Nombre de usuario"
+                required
+              />
+              <!-- Campo de entrada para el nombre de usuario -->
+            </div>
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-lock"></i>
+              <!-- Icono de contraseña -->
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+              />
+              <!-- Campo de entrada para la contraseña -->
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+            <!-- Botón de envío del formulario de inicio de sesión -->
+          </form>
+          <div class="register-link">
+            <!-- Sección de enlace de registro -->
+            <p>
+              ¿No tienes cuenta?
+              <a href="#" onclick="showRegisterForm()">Regístrate</a>
+            </p>
+            <!-- Enlace para mostrar el formulario de registro -->
+          </div>
         </div>
-    </div>
-</body>
+        <div id="registerForm" style="display: none">
+          <!-- Formulario de registro oculto inicialmente -->
+          <h1>Registro</h1>
+          <!-- Título del formulario de registro -->
+          <form>
+            <!-- Formulario de registro -->
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-user"></i>
+              <!-- Icono de usuario -->
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nombre"
+                required
+              />
+              <!-- Campo de entrada para el nombre -->
+            </div>
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-envelope"></i>
+              <!-- Icono de correo electrónico -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Correo electrónico"
+                required
+              />
+              <!-- Campo de entrada para el correo electrónico -->
+            </div>
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-lock"></i>
+              <!-- Icono de contraseña -->
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+                required
+              />
+              <!-- Campo de entrada para la contraseña -->
+            </div>
+            <div class="form-group">
+              <!-- Grupo de campo de entrada -->
+              <i class="fas fa-globe"></i>
+              <!-- Icono de nacionalidad -->
+              <input
+                type="text"
+                id="nationality"
+                name="nationality"
+                placeholder="Nacionalidad"
+                required
+              />
+              <!-- Campo de entrada para la nacionalidad -->
+            </div>
+            <button type="submit">Registrarse</button>
+            <!-- Botón de envío del formulario de registro -->
+          </form>
+        </div>
+      </div>
+      }
+      
+    <script>
+      // Función para mostrar el formulario de registro
+      function showRegisterForm() {
+        document.getElementById("registerForm").style.display = "block";
+      }
+    </script>
+  </body>
 </html>

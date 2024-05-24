@@ -24,7 +24,9 @@ nav{
   }
   ul li{
   display: inline-block;
+  align-items: center;
   padding: 0px 20px;
+  
   }
   
   a {
@@ -63,6 +65,20 @@ nav{
     list-style: none;
     position: relative;
   }
+ .sub {
+ color: #000000;
+ }
+ .subc{
+  color: #376faf;
+ }
+ .subcr{
+  width: 7%;
+  height: 7%;
+  background: url(Logo/Geographic Tour.jpeg)no-repeat;
+  position: relative;
+  height: 658px;
+  background: 123px
+ }
   .texto {
     position: absolute;
     text-align: center;
@@ -121,3 +137,14 @@ nav{
     .formato{
       color: black;
     }
+    /*  .logo{
+      display: inline;
+      width: 120px;
+      height: 49px;
+     }
+     
+     .menu{
+       font-size: 32px;
+       text-align: center;
+     
+     */

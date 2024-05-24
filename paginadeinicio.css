@@ -15,12 +15,20 @@
       background-color: rgba(207, 225, 233, 0.836);
     }
     .miau{
-     
+    
       margin-left: 545px;
     }
 
   .Rawr{
-    font-size: x-large;
-  color: rgb(0, 0, 0);
-  
+    font-weight: 50px;
+  font-family: 'Manrope', 'sans-serif';
+  font-optical-sizing: auto;
+  font-size: large;
+  }
+
+  .help {
+    font-weight: 50px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
