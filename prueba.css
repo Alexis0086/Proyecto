@@ -59,20 +59,20 @@ nav{
     font-weight: 600;
     cursor: pointer;
     transition: 0.5s;
-    color: white;
+    color: chocolate;
   }
   .cta {
     padding: 10px 24px;
     border-radius: 30px;
     background-color:var(--main-color) ;
-    color: white;
+    color: brown;
     font-weight: 600;
     cursor: pointer;
     transition: 0,5s;
 
   }
   .cta:hover {
-    color: white;
+    color: black;
     background-color: #376faf
   }
 
@@ -80,7 +80,7 @@ nav{
   color: var(--main-color);
   }
   a {
-    color: white;
+    color: aquamarine;
     text-decoration: none;
   }
   a:hover{
