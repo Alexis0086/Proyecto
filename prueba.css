@@ -31,8 +31,54 @@ nav{
   /* cabezera */
   header {
     height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100px;
+    transition: 0.5s;
   }
   
+  .logo {
+  height: 60%;
+  }
+  .main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+  }
+  .menu-item {
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+  }
+  .cta {
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color:var(--main-color) ;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0,5s;
+
+  }
+  .cta:hover {
+    color: white;
+    background-color: #376faf
+  }
+
+  .menu-item:hover {
+  color: var(--main-color);
+  }
   a {
     color: white;
     text-decoration: none;
@@ -78,7 +124,7 @@ nav{
  .subcr{
   width: 7%;
   height: 7%;
-  background: url(Logo/Geographic Tour.jpeg)no-repeat;
+  background: url(Imagenes_Belgica/Atomium.jpg)no-repeat;
   position: relative;
   height: 658px;
   background: 123px
@@ -141,14 +187,4 @@ nav{
     .formato{
       color: black;
     }
-    /*  .logo{
-      display: inline;
-      width: 120px;
-      height: 49px;
-     }
-     
-     .menu{
-       font-size: 32px;
-       text-align: center;
-     
-     */
+  }
