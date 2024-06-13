@@ -1,139 +1,254 @@
+.bodypageBel{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
 
 .Container{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Belgica/Dinant.jpg);
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes/Fondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     border-style: solid;
-    height: 1000px;
+    height: 1100px;
     width: 100%;
     }
 
-    .ImgPrin{
+    .Content{
+        width: 100%;
+        height: 1100px;
+        display: flex;
+    }
+
+    .Content a{
+        text-decoration: none;
+    }
+    
+    .ContentLeft{
         margin-top: 150px;
-        margin-left: 100px;
+        margin-left: 120px;
+        background-size: cover;
+        width: 655px;
+        height: 805px;
+    }
+
+    .ImgPrin{
         background-image: url(Imagenes_Belgica/Bruselas.jpg); 
         background-repeat: no-repeat;
         background-size: 700px 400px;
+        background-position: center;
         height: 400px;
-        width: 700px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 640px;
+        font-family: "Playfair Display", serif;
         font-weight: 1000;
         color: white;
         font-size: 35px;
         padding-top: 0.5px;
-        padding-left: 25px;
+        padding-left: 14px;
+        overflow: hidden;
+        transition: background-size 0.25s;
     }
 
-
+    .ImgPrin:hover{
+        background-size: 750px 450px;
+    }
 
     .ContentSecBel {
+        margin-top: 50px;
         display: flex;
+        position: absolute;
         background-size: cover;
-        margin-top: 40px;
-        margin-left: 100px;
         height: 270px;
         width: 800px;
+        gap: 20px;
     }
 
-    .Dinant{
-        /* display: block;
-        position: relative; */
-        margin-left: 20px;
-        display: block;
-        width: 320px ;
-        height: 350px ;
-    }
-    
-
-    .DinantImg{ 
-        background-image: url(Imagenes_Belgica/Dinant.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 250px;
-        width: 310px;
+    .ContentSecBel h1{
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-style: normal;
-        font-style: normal;
-        font-weight: 1000;
+        font-size: 35px;
         color: white;
-        font-size: 25px; 
-        padding-left: 10px;
-        padding-top: 1px;
-    }
-
-    .Dinanttext{
-        background-color: white;
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        display: flex;
-        width: 320px;
-        height: 100px;
-        font-family: "Playfair Display", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: 5000;
-        color: black;
-        font-size: 25px;
-        
-    }
-
-    .Dinanttext h1{
-        margin-top: 15px;
-        margin-left: 65px;
-        text-align: center;
-        font-family: "Roboto Slab", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-size: 25px;
+        padding-left: 15px;
     }
     
-    .Amberes{
-        margin-left: 20px;
-        display: block;
-        width: 320px ;
-        height: 350px ;
-        }
-
-    .Amberestext{
-        background-color: white;
-        display: flex;
-        width: 320px;
-        height: 100px;
-        color: black;
+    .ContentSecBel h2{
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
         font-size: 25px;
-    }
-
-    .Amberestext h1{
         margin-left: 17px;
         margin-right: 3px;
         margin-top: 15px;
         text-align: center;
-        font-family: "Roboto Slab", serif;
+}
+
+    .ContentSecBel p{
+        font-family: "Manrope", sans-serif;
         font-optical-sizing: auto;
+        font-weight: 600PX;
         font-style: normal;
         font-size: 25px;
+        margin-top: 75px;
+        margin-left: 20px;
+        position: absolute;
+}
+
+    .Dinant{
+        display: block;
+        width: 320px ;
+        height: 350px ;
+    }
+    
+    .DinantImg{ 
+        background-image: url(Imagenes_Belgica/Dinant.jpg);
+        background-repeat: no-repeat;
+        background-size:360px 251px;
+        background-position: center;
+        height: 252px;
+        width: 310px;
+        padding-left: 10px;
+        padding-top: 0.5px;
+        transition: background-size 0.25s;
+        
     }
 
+    .DinantImg:hover{
+        background-size: 400px 300px;
+    }
+
+    .Dinanttext{
+        background-color: white;
+        display: flex;
+        width: 320px;
+        height: 140px;
+        color: black;
+    }
+    
+    .Amberes{
+        display: block;
+        width: 315px ;
+        height: 350px ;
+    }
+
+    .Amberestext{
+        background-color: white;
+        display: flex;
+        width: 315px;
+        height: 140px;
+        color: black;
+    }
 
     .AmberesImg{
         padding-top: 0px;
         background-image: url(Imagenes_Belgica/Amberes.jpeg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 320px 251px;
+        background-position: center;
         height: 250px;
-        width: 310px;
+        width: 305px;
         font-weight: 1000;
-        color: white;
-        font-size: 25px;
-        margin-top:0%; 
         padding-left: 10px;
         padding-top: 1px;
-        }
+        overflow: hidden;
+        transition: background-size 0.25s;
+    }
+
+    .AmberesImg:hover{
+        background-size: 350px 290px;
+    }
+
+    .ContentRight{
+        margin-top: 170px;
+        margin-left: 80px;
+        
+        width: 600px;
+        transition: all;
+    }
+
+    .ContentRight  a :hover{
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+    .ContentRight h2{
+        padding-left: 230px;
+        color: white;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 25px;
+        font-family: "Playfair Display", serif;
+        position: absolute;
+    }
+
+    .ContentRight p{
+        color: white;
+        padding-left: 230px;
+        padding-top: 40px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .MasLugares{
+        width: 200px;
+        height: 100px;
+        color: white;
+        display: flex;
+        position: absolute;
+    }
+    .MasLugares::before{
+    background:gold;
+    content: "";
+    display: block;
+    flex: 0 0 5px;
+    margin-right: 20px;
+    position: relative;
+    }
+
+    .Malinas{
+        margin-top: 130px;
+        background-image: url(Imagenes_Belgica/Malina.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
+
+    .Brujas{
+        margin-top: 280px;
+        background-image: url(Imagenes_Belgica/Brujas.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 510px;
+        height: 300px;
+        position: absolute;
+    }
+
+
+    .Gante{
+        margin-top: 430px;
+        background-image: url(Imagenes_Belgica/Gante.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
+
+    .Lieja{
+        margin-top: 580px;
+        background-image: url(Imagenes_Belgica/Lieja.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
 
 
 
-
-       
-    /* Miau sí. */
+    
