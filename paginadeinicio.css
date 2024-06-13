@@ -32,3 +32,17 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+
+.opera {
+  font-weight: 50px;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.oslo {
+  font-weight: 50px;
+  font-family: 'Manrope', 'sans-serif';
+  font-optical-sizing: auto;
+  font-size: large;
+}
