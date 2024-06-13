@@ -1,13 +1,13 @@
 .bodypageBel{
     background-color: black;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .Container{
+    
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes/Fondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Belgica/Atomium.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-style: solid;
@@ -15,8 +15,24 @@
     width: 100%;
     }
 
+    header{
+        margin-top: 10px;
+        border-style: solid;
+        border-left: 1px ;
+        border-right: 1px;
+        border-color: white;
+        margin-left:42%;
+        text-align: center;
+        justify-content: center;
+        font-size: 80px;
+        position: absolute;
+        color: white;
+        text-transform: uppercase;
+    }
+        
     .Content{
-        width: 100%;
+        margin: auto;
+        width: 1400px;
         height: 1100px;
         display: flex;
     }
@@ -36,12 +52,14 @@
     .ImgPrin{
         background-image: url(Imagenes_Belgica/Bruselas.jpg); 
         background-repeat: no-repeat;
-        background-size: 700px 400px;
+        background-size: 700px 380px;
         background-position: center;
-        height: 400px;
+        height: 380px;
         width: 640px;
-        font-family: "Playfair Display", serif;
-        font-weight: 1000;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
         color: white;
         font-size: 35px;
         padding-top: 0.5px;
@@ -51,11 +69,11 @@
     }
 
     .ImgPrin:hover{
-        background-size: 750px 450px;
+        background-size: 750px 410px;
     }
 
     .ContentSecBel {
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         position: absolute;
         background-size: cover;
@@ -65,9 +83,11 @@
     }
 
     .ContentSecBel h1{
-        font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-style: normal;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
         font-size: 35px;
         color: white;
         padding-left: 15px;
@@ -80,7 +100,7 @@
         font-size: 25px;
         margin-left: 17px;
         margin-right: 3px;
-        margin-top: 15px;
+        margin-top: 10px;
         text-align: center;
 }
 
@@ -90,7 +110,7 @@
         font-weight: 600PX;
         font-style: normal;
         font-size: 25px;
-        margin-top: 75px;
+        margin-top: 70px;
         margin-left: 20px;
         position: absolute;
 }
@@ -104,9 +124,9 @@
     .DinantImg{ 
         background-image: url(Imagenes_Belgica/Dinant.jpg);
         background-repeat: no-repeat;
-        background-size:360px 251px;
+        background-size:360px 240px;
         background-position: center;
-        height: 252px;
+        height: 245px;
         width: 310px;
         padding-left: 10px;
         padding-top: 0.5px;
@@ -141,16 +161,15 @@
     }
 
     .AmberesImg{
-        padding-top: 0px;
+        padding-top: 4px;
         background-image: url(Imagenes_Belgica/Amberes.jpeg);
         background-repeat: no-repeat;
-        background-size: 320px 251px;
+        background-size: 320px 240px;
         background-position: center;
-        height: 250px;
+        height: 240px;
         width: 305px;
         font-weight: 1000;
         padding-left: 10px;
-        padding-top: 1px;
         overflow: hidden;
         transition: background-size 0.25s;
     }
@@ -160,9 +179,8 @@
     }
 
     .ContentRight{
-        margin-top: 170px;
+        margin-top: 160px;
         margin-left: 80px;
-        
         width: 600px;
         transition: all;
     }
@@ -209,7 +227,7 @@
     }
 
     .Malinas{
-        margin-top: 130px;
+        margin-top: 170px;
         background-image: url(Imagenes_Belgica/Malina.jpeg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
@@ -219,7 +237,7 @@
     }
 
     .Brujas{
-        margin-top: 280px;
+        margin-top: 320px;
         background-image: url(Imagenes_Belgica/Brujas.jpeg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
@@ -230,7 +248,7 @@
 
 
     .Gante{
-        margin-top: 430px;
+        margin-top: 470px;
         background-image: url(Imagenes_Belgica/Gante.jpeg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
@@ -240,7 +258,7 @@
     }
 
     .Lieja{
-        margin-top: 580px;
+        margin-top: 620px;
         background-image: url(Imagenes_Belgica/Lieja.jpeg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
