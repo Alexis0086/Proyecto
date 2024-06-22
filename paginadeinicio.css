@@ -10,8 +10,13 @@ img {
   width: 550px;
 }
 
+.Logo {
+  width: 50px;
+  height: 60px;
+}
+
 header {
-  height: 40px;
+  height: 20px;
   background-color: #fff;
   padding: 20px 20px;
   display: flex;
