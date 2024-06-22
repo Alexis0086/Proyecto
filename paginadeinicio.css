@@ -1,13 +1,16 @@
 body {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes_Tokyo/background\ img\ Kioto.jpg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes_Belgica/Lieja.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0%;
+  padding: 0%;
 }
 
 img {
-  height: 400px;
-  width: 550px;
+  height: 100px;
+  width: 200px;
+  position: relative;
 }
 
 .Logo {
@@ -15,12 +18,15 @@ img {
   height: 60px;
 }
 
+.text_header {
+  color: rgb(0, 0, 0);
+}
+
 header {
-  height: 20px;
-  background-color: #fff;
-  padding: 20px 20px;
+  height: 40px;
+  background-color: white;
+  padding: 20px, 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

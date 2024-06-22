@@ -1,10 +1,10 @@
-.bodypageBel{
+body{
     background-color: black;
     
 }
 
+/* Contenedor de la totalidad de la página */
 .Container{
-    
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Belgica/Atomium.jpg);
@@ -15,6 +15,7 @@
     width: 100%;
     }
 
+/* Encabezado */
     header{
         margin-top: 10px;
         border-style: solid;
@@ -29,7 +30,8 @@
         color: white;
         text-transform: uppercase;
     }
-        
+       
+/* Contenido de la página */
     .Content{
         margin: auto;
         width: 1400px;
@@ -40,7 +42,8 @@
     .Content a{
         text-decoration: none;
     }
-    
+
+/* Contenido ubicado a la izquierda de la página */
     .ContentLeft{
         margin-top: 150px;
         margin-left: 120px;
@@ -48,7 +51,7 @@
         width: 655px;
         height: 805px;
     }
-
+/* Imagen principal */
     .ImgPrin{
         background-image: url(Imagenes_Belgica/Bruselas.jpg); 
         background-repeat: no-repeat;
@@ -72,7 +75,8 @@
         background-size: 750px 410px;
     }
 
-    .ContentSecBel {
+/* Contenido secundario ubicado a la izquierda-abajo */
+    .ContentSecLeft {
         margin-top: 20px;
         display: flex;
         position: absolute;
@@ -82,7 +86,8 @@
         gap: 20px;
     }
 
-    .ContentSecBel h1{
+/* Texto del contenido secundario ubicado a la izquierda-abajo */
+    .ContentSecLeft h1{
         font-optical-sizing: auto;
         font-style: normal;
         font-weight: 500;
@@ -93,7 +98,7 @@
         padding-left: 15px;
     }
     
-    .ContentSecBel h2{
+    .ContentSecLeft h2{
         font-family: "Roboto Slab", serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -104,7 +109,7 @@
         text-align: center;
 }
 
-    .ContentSecBel p{
+    .ContentSecLeft p{
         font-family: "Manrope", sans-serif;
         font-optical-sizing: auto;
         font-weight: 600PX;
@@ -114,7 +119,7 @@
         margin-left: 20px;
         position: absolute;
 }
-
+/*Tarjetas del contenido secundario ubicado a la izquierda-abajo */
     .Dinant{
         display: block;
         width: 320px ;
@@ -124,7 +129,7 @@
     .DinantImg{ 
         background-image: url(Imagenes_Belgica/Dinant.jpg);
         background-repeat: no-repeat;
-        background-size:360px 240px;
+        background-size:360px 245px;
         background-position: center;
         height: 245px;
         width: 310px;
@@ -164,7 +169,7 @@
         padding-top: 4px;
         background-image: url(Imagenes_Belgica/Amberes.jpeg);
         background-repeat: no-repeat;
-        background-size: 320px 240px;
+        background-size: 320px 250px;
         background-position: center;
         height: 240px;
         width: 305px;
@@ -178,13 +183,32 @@
         background-size: 350px 290px;
     }
 
+ /* Contenido ubicado a la derecha */
     .ContentRight{
         margin-top: 160px;
         margin-left: 80px;
         width: 600px;
         transition: all;
     }
+    
+/* Encabezado del contenido a la derecha */
+    .MasLugares{
+        width: 200px;
+        height: 100px;
+        color: white;
+        display: flex;
+        position: absolute;
+    }
+    .MasLugares::before{
+    background:gold;
+    content: "";
+    display: block;
+    flex: 0 0 5px;
+    margin-right: 20px;
+    position: relative;
+    }
 
+/* Texto del contenido ubicado a la derecha */
     .ContentRight  a :hover{
         text-decoration: underline;
         text-decoration-color: white;
@@ -210,22 +234,7 @@
         font-family: "Playfair Display", serif;
     }
 
-    .MasLugares{
-        width: 200px;
-        height: 100px;
-        color: white;
-        display: flex;
-        position: absolute;
-    }
-    .MasLugares::before{
-    background:gold;
-    content: "";
-    display: block;
-    flex: 0 0 5px;
-    margin-right: 20px;
-    position: relative;
-    }
-
+/* Tarjetas del contenido ubicado a la derecha */
     .Malinas{
         margin-top: 170px;
         background-image: url(Imagenes_Belgica/Malina.jpeg);
