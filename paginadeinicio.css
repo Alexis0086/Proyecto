@@ -1,5 +1,5 @@
 body {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes_Belgica/Lieja.jpeg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(Imagenes_Belgica/Lieja.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,25 +8,75 @@ body {
 }
 
 img {
-  height: 100px;
-  width: 200px;
+  height: 300px;
+  width: 500px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.imgtra {
+  display: flex;
   position: relative;
 }
 
-.Logo {
+/* .Logo {
   width: 50px;
   height: 60px;
-}
+} */
+
+
 
 .text_header {
-  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0%;
+  margin: 0%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-bottom: .3vw solid #ffffff;
+  overflow: hidden;
+  animation: anim 2.5s linear forwards; 
+  top: 4.5%;
+  align-items: center;
+  justify-content: center;
 }
+
+@keyframes anim {
+  0% {
+    width: 0;
+    height: 0;
+
+  }
+
+  30% {
+    width: 50%;
+    height: 0;
+  }
+  60% {
+    width: 50%;
+    height: 5%;
+  }
+  80% {
+    width: 50%;
+    height: 5%;
+  }
+
+  100% {
+    width: 50%;
+    height: 5%;
+  }
+}
+
 
 header {
   height: 40px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.518);
   padding: 20px, 20px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: center;
 }
