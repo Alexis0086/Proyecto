@@ -2,55 +2,128 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/prueba.css"> 
-    <title>Carrusel</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="prueba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <header id="Header">
-    <img src="/Logo/Geographic Tour.jpeg" alt="" class="logo">
-    <!-- Menu de la cabezera de la pagina -->
-    <ul class="main-menu">
-        <li class="menu-item">Home</li>
-        <li class="menu-item">Viajes</li>
-        <li class="menu-item">Lugares</li>
-        <li class="menu-item">Inicio</li>
-        <li class="si">Contactos</li>
-
-    </ul>
+    <header>
+        <a href="#" class="brand">Geographic tour</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Explore</a>
+            <a href="#">Gallery</a>
+            <a href="#">contact</a>
+            </div>
+        </div>
     </header>
-        <script src="code.js"></script>
-   <!-- Es la configuración de el carrusel (slider-box) y las imagenes que contiene -->
-    <h2 class="titulo">Geografic Tour</h2>
-    <div class="slider-box">
-        <ul class="lista">
-            <li class="formato">
-                <!-- Son las imagenes de el carrusel -->
-                <img src="Emiratos_Arabes_Unidos/Imagen de Oscar.jpg" alt="Oscar_gif">
-                <div class="texto"></div>
-                <h2>Emiratos Arabes</h2>
-                <p>Es un pais</p>
-            </li>
-            <li class="formato">
-                <img src="/Imagenes_Noruega/Noruega.jpeg" alt="Britany_gif">
-                <div class="texto"></div>
-                <h2>Noruega</h2>
-                <p>Tambien es un pais</p>
-            <li class="formato">
-                <img src="Imagenes_Tokyo/Japon.gif" alt="Samantha_gif">
-                <div class="texto"></div>
-                <h2>Japon</h2>
-                <p>Es otro pais</p>
-            </li>
-            <li class="formato">
-                <img src="Imagenes_Belgica/Lovaina.jpeg" alt="hghhh">
-                <div class="texto"></div>
-                <h2>Belgica</h2>
-                <p>Se le puede llamar pais</p>
-            </li>
-        </ul>
-     </div>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus illum ut similique earum excepturi fuga, sit alias, autem id minima numquam sapiente odio. Rerum, ipsam architecto nisi nobis mollitia doloremque!
+    <section class="home">
+        <video class="video-slide active" src="Logo/Video de WhatsApp 2024-06-22 a las 16.56.44_26d61021 copy.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 16.59.26_e08049a1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 17.06.09_8fdc201e.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 17.08.55_7bccf6dc.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 22.13.15_329a493b.mp4" autoplay muted loop></video>
+        
+        <div class="content active">
+            <h1>Wonderful <br><span>Travels</span></h1>
+            <p>Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.</p>
+                <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>BLABLA <br><span>SISI</span></h1>
+            <p>Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.</p>
+                <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>BLOBLO <br><span>NONO</span></h1>
+            <p>Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.</p>
+                <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>YESYES <br><span>NONO</span></h1>
+            <p>Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.</p>
+                <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>NONO <br><span>YESYES</span></h1>
+            <p>Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.
+                Yes I do but I don't know.</p>
+                <a href="#">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        </div>
+    </section>
+<script type="text/javascript">
+//Javascript of responsive navigation menu
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
+
+//Javascript for video slider navigation
+const btns = document.querySelectorAll(".nav-btn")
+const slides = document.querySelectorAll(".video-slide")
+const contents = document.querySelectorAll(".content")
+
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+    btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+    slide.classList.remove("active");
+    });
+
+    contents.forEach((content) => {
+    content.classList.remove("active");
+    });
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+}
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    })
+})
+
+</script>
 </body>
 </html>
