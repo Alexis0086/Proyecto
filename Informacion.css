@@ -1,0 +1,30 @@
+.Content{
+    width: 1500px;
+    border-style: solid;
+    display: flex;
+}
+
+
+.miau{
+    position: relative;
+    border-style: solid;
+    border-color: aqua;
+    background-image: url(Imagenes_Belgica/Amberes.jpeg);
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    height: 600px;
+    width: 300px;
+}
+
+.miau:hover {
+    background-size: 1000px 600px;
+    position: relative;
+    border-color: blue;
+    width: 1000px;
+}
+
+.Informacion{
+    position: absolute;
+    background-color: white;
+    width: 900px;
+}
