@@ -24,7 +24,15 @@ img {
 }
 
 .card-container {
-  columns: 7;
+  columns: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-container2 {
+  columns: 4;
   display: flex;
   justify-content: center;
   align-items: center;
