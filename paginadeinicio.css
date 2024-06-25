@@ -28,7 +28,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
 }
 
 .card {
@@ -577,8 +577,6 @@ img {
     height: 5%;
   }
 }
-
-
 
 header {
   height: 40px;
