@@ -23,6 +23,14 @@ img {
   display: flex;
 }
 
+.card-container {
+  columns: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .card {
   width: 330px;
   width: 330px;
