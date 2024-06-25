@@ -1,7 +1,7 @@
-/* Importación de la fuente Quicksand de Google Fonts */
+/* Importar la fuente Quicksand de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-/* Reseteo de estilos y configuración de la fuente principal */
+/* Reseteo básico de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Estilos del body y cursor personalizado */
+/* Estilos del body */
 body {
     display: flex;
     justify-content: center;
@@ -114,6 +114,7 @@ section .signin .content .form {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    transition: all 0.3s ease;
 }
 
 /* Estilos de las cajas de entrada */
@@ -133,6 +134,7 @@ section .signin .content .form .inputBox input {
     color: #fff;
     font-weight: 500;
     font-size: 1em;
+    transition: 0.5s;
 }
 
 /* Estilos de las etiquetas de los campos de entrada */
@@ -146,9 +148,10 @@ section .signin .content .form .inputBox i {
     pointer-events: none;
 }
 
-/* Estilos de las etiquetas cuando el campo está en foco  */
+/* Estilos de las etiquetas cuando el campo está en foco o tiene contenido */
 .signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i {
+.signin .content .form .inputBox input:valid ~ i,
+.signin .content .form .inputBox.focus i {
     transform: translateY(-7.5px);
     font-size: 0.8em;
     color: #3498db;
@@ -165,6 +168,11 @@ section .signin .content .form .inputBox i {
 .signin .content .form .links a {
     color: #9a9a9a;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.signin .content .form .links a:hover {
+    color: #3498db;
 }
 
 .signin .content .form .links a:nth-child(2) {
@@ -181,13 +189,18 @@ section .signin .content .form .inputBox i {
     font-size: 1.35em;
     letter-spacing: 0.05em;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.signin .content .form .inputBox input[type="submit"]:hover {
+    background: #2980b9;
 }
 
 input[type="submit"]:active {
     opacity: 0.6;
 }
 
-/* Media queries para hacer el diseño  */
+/* Hacer el diseño respectivo */
 @media (max-width: 900px) {
     section span {
         width: calc(10vw - 2px);
@@ -200,4 +213,29 @@ input[type="submit"]:active {
         width: calc(20vw - 2px);
         height: calc(20vw - 2px);
     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Aplicar animación de aparición gradual al formulario */
+.form {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Aplicar animación de deslizamiento a las cajas de entrada */
+.inputBox {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Efecto de brillo al enfocar los campos de entrada */
+.inputBox input:focus {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }

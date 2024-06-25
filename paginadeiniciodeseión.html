@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <section>
-        <!-- Elementos span vacíos, para animación de fondo -->
+        <!-- Elementos span vacíos, para animación de fondo (Cuadrados de la página) -->
         <span></span>
         <span></span>
         <span></span>
@@ -270,52 +270,95 @@
         <span></span>
         <span></span>
 
-<!-- Contenedor principal del formulario de inicio de sesión -->
+<!-- Contenedor principal para los formularios -->
 <div class="signin">
     <div class="content">
-        <!-- Título de Geographyc Tour -->
+        <!-- Título del sitio -->
         <h1 class="site-title">Geographyc Tour</h1>
+        <!-- Título dinámico del formulario -->
         <h2 id="formTitle">Inicia Sesión</h2>
+        
         <!-- Formulario de inicio de sesión -->
         <div class="form" id="loginForm">
+            <!-- Campo de usuario o correo -->
             <div class="inputBox">
                 <input type="text" required>
                 <i>Usuario o Correo</i>
             </div>
+            <!-- Campo de contraseña -->
             <div class="inputBox">
                 <input type="password" required>
                 <i>Contraseña</i>
             </div>
+            <!-- Enlaces para recuperar contraseña y registrarse -->
             <div class="links">
                 <a href="#" id="forgotPasswordLink">¿Olvidaste la Contraseña?</a>
                 <a href="#" id="registerLink">Registrarse</a>
             </div>
+            <!-- Botón de inicio de sesión -->
             <div class="inputBox">
                 <input type="submit" value="Iniciar Sesión">
             </div>
         </div>
 
-        <!-- Formulario de registro (oculto) -->
+        <!-- Formulario de registro (inicialmente oculto) -->
         <div class="form" id="registerForm" style="display: none;">
-            <!-- ... (mantener los campos de registro como estaban) ... -->
+            <!-- Campos para el registro -->
+            <div class="inputBox">
+                <input type="text" required>
+                <i>Usuario</i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <i>Nacionalidad</i>
+            </div>
+            <div class="inputBox">
+                <input type="email" required>
+                <i>Correo electrónico</i>
+            </div>
+            <div class="inputBox">
+                <input type="tel" required>
+                <i>Número telefónico</i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <i>Contraseña</i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <i>Confirmar contraseña</i>
+            </div>
+            <!-- Botón de registro -->
+            <div class="inputBox">
+                <input type="submit" value="Registrarse">
+            </div>
+            <!-- Enlace para volver al inicio de sesión -->
+            <div class="links">
+                <a href="#" id="backToLoginLink">Volver al inicio de sesión</a>
+            </div>
         </div>
 
-        <!-- Formulario de recuperación de contraseña (oculto) -->
+        <!-- Formulario de recuperación de contraseña (inicialmente oculto) -->
         <div class="form" id="forgotPasswordForm" style="display: none;">
+            <!-- Campo para correo o número telefónico -->
             <div class="inputBox">
                 <input type="text" required>
                 <i>Correo o número telefónico asociado</i>
             </div>
+            <!-- Botón para continuar con la recuperación -->
             <div class="inputBox">
                 <input type="submit" value="Continuar" id="continueResetPassword">
             </div>
+            <!-- Campo para el código de verificación (inicialmente oculto) -->
             <div class="inputBox" id="verificationCodeBox" style="display: none;">
                 <input type="text" required>
                 <i>Código de verificación</i>
             </div>
+            <!-- Botón para recuperar contraseña (inicialmente oculto) -->
             <div class="inputBox" id="resetPasswordButton" style="display: none;">
                 <input type="submit" value="Recuperar Contraseña">
             </div>
+            <!-- Enlace para volver al inicio de sesión -->
             <div class="links">
                 <a href="#" id="backToLoginLink2">Volver al inicio de sesión</a>
             </div>
@@ -323,6 +366,7 @@
     </div>
 </div>
 </section>
+<!-- Enlace al archivo JavaScript -->
 <script src="iniciodesesión.js"></script>
 </body>
 </html>

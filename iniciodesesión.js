@@ -19,6 +19,7 @@ function showRegisterForm() {
     registerForm.style.display = 'flex';
     forgotPasswordForm.style.display = 'none';
     formTitle.textContent = 'Registro';
+    animateFormChange(registerForm);
 }
 
 // Función para mostrar el formulario de recuperación de contraseña
@@ -29,6 +30,7 @@ function showForgotPasswordForm() {
     verificationCodeBox.style.display = 'none';
     resetPasswordButton.style.display = 'none';
     formTitle.textContent = 'Recuperar Contraseña';
+    animateFormChange(forgotPasswordForm);
 }
 
 // Función para volver al formulario de inicio de sesión
@@ -37,13 +39,26 @@ function showLoginForm() {
     registerForm.style.display = 'none';
     forgotPasswordForm.style.display = 'none';
     formTitle.textContent = 'Inicia Sesión';
+    animateFormChange(loginForm);
 }
 
 // Función para mostrar el campo de código de verificación
-function showVerificationCode() {
+function showVerificationCode(event) {
+    event.preventDefault();
     verificationCodeBox.style.display = 'block';
     resetPasswordButton.style.display = 'block';
     continueResetPassword.style.display = 'none';
+    animateFormChange(verificationCodeBox);
+}
+
+// Función para animar el cambio de formulario
+function animateFormChange(form) {
+    form.style.opacity = '0';
+    form.style.transform = 'translateY(-20px)';
+    setTimeout(() => {
+        form.style.opacity = '1';
+        form.style.transform = 'translateY(0)';
+    }, 50);
 }
 
 // Asignar eventos a los enlaces
@@ -52,3 +67,17 @@ forgotPasswordLink.addEventListener('click', showForgotPasswordForm);
 backToLoginLink.addEventListener('click', showLoginForm);
 backToLoginLink2.addEventListener('click', showLoginForm);
 continueResetPassword.addEventListener('click', showVerificationCode);
+
+// Agregar animación a los campos de entrada
+document.querySelectorAll('.inputBox input').forEach(input => {
+    // Cuando el campo obtiene el foco
+    input.addEventListener('focus', () => {
+        input.parentElement.classList.add('focus');
+    });
+    // Cuando el campo pierde el foco
+    input.addEventListener('blur', () => {
+        if (input.value === '') {
+            input.parentElement.classList.remove('focus');
+        }
+    });
+});

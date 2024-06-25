@@ -25,6 +25,7 @@ img {
 
 .card {
   width: 330px;
+  width: 330px;
   height: 500px;
   position: relative;
   margin: 0%;
@@ -33,7 +34,12 @@ img {
   margin-top: 2%;
   border-radius: 20px;
  overflow: hidden;
-  border: 8px solid #ffffff
+  border: 8px solid #ffffff;
+
+  background-image: url(Imagenes_Belgica/Gante.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card:hover .card-body {
@@ -172,7 +178,7 @@ img {
  overflow: hidden;
   border: 8px solid #ffffff;
 
-  background-image: url(Imagenes_Belgica/Bruxels.jpeg);
+  background-image: url(Imagenes_Belgica/Bruselas.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,6 +225,290 @@ img {
 }
 
 .card-btn3 {
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.card4 {
+  width: 330px;
+  height: 500px;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 20px;
+ overflow: hidden;
+  border: 8px solid #ffffff;
+
+  background-image: url(Imagenes_Belgica/Brujas.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card4:hover .card-body4 {
+  right: 0; 
+}
+
+.card-img4 {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+.card-body4 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-tittle4 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-info4 {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px, 0px;
+  font-weight: 400;
+}
+
+.card-btn4 {
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.card5 {
+  width: 330px;
+  height: 500px;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 20px;
+ overflow: hidden;
+  border: 8px solid #ffffff;
+
+  background-image: url(Imagenes_Belgica/Dinant.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card5:hover .card-body5 {
+  right: 0; 
+}
+
+.card-img5 {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+.card-body5 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-tittle5 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-info5 {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px, 0px;
+  font-weight: 400;
+}
+
+.card-btn5 {
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.card6 {
+  width: 330px;
+  height: 500px;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 20px;
+ overflow: hidden;
+  border: 8px solid #ffffff;
+
+  background-image: url(Imagenes_Belgica/Malina.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card6:hover .card-body6 {
+  right: 0; 
+}
+
+.card-img6 {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+.card-body6 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-tittle6 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-info6 {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px, 0px;
+  font-weight: 400;
+}
+
+.card-btn6 {
+  color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.card7 {
+  width: 330px;
+  height: 500px;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  margin-left: 10%;
+  margin-top: 2%;
+  border-radius: 20px;
+ overflow: hidden;
+  border: 8px solid #ffffff;
+
+  background-image: url(Imagenes_Belgica/Lieja.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card7:hover .card-body7 {
+  right: 0; 
+}
+
+.card-img7 {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+.card-body7 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+
+.card-tittle7 {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.card-info7 {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px, 0px;
+  font-weight: 400;
+}
+
+.card-btn7 {
   color: gray;
   padding: 10px;
   border-radius: 5px;
