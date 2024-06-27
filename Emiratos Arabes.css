@@ -55,7 +55,7 @@ body{
     }
 /* Imagen principal */
     .ImgPrin{
-        background-image: url(Imagenes_Belgica/Bruselas.jpg); 
+        background-image: url(Emiratos_Arabes_Unidos/); 
         background-repeat: no-repeat;
         background-size: 700px 380px;
         background-position: center;
@@ -129,7 +129,7 @@ body{
     }
     
     .MuseodelFuturoImg{ 
-        background-image: url(im);
+        background-image: url(Emiratos_Arabes_Unidos/Museo\ del\ futuro\ \(Mediana\).jpg);
         background-repeat: no-repeat;
         background-size:360px 245px;
         background-position: center;
@@ -169,7 +169,7 @@ body{
 
     .BurjKhalifaImg{
         padding-top: 4px;
-        background-image: url(Imagenes_Belgica/Amberes.jpeg);
+        background-image: url(Emiratos_Arabes_Unidos/Burj\ Khalifa.jpg);
         background-repeat: no-repeat;
         background-size: 320px 250px;
         background-position: center;
@@ -239,7 +239,7 @@ body{
 /* Tarjetas del contenido ubicado a la derecha */
     .SkiDubai{
         margin-top: 170px;
-        background-image: url(Imagenes_Belgica/Malina.jpeg);
+        background-image: url(Emiratos_Arabes_Unidos/Ski\ Dubai.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
@@ -249,7 +249,7 @@ body{
 
     .DubaiCreek{
         margin-top: 320px;
-        background-image: url(Imagenes_Belgica/Brujas.jpeg);
+        background-image: url(Emiratos_Arabes_Unidos/Dubai\ Creek.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 510px;
@@ -260,7 +260,7 @@ body{
 
     .DubaiMarina{
         margin-top: 470px;
-        background-image: url(Imagenes_Belgica/Gante.jpeg);
+        background-image: url(Emiratos_Arabes_Unidos/Dubai\ Marina.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
@@ -270,7 +270,7 @@ body{
 
     .DubaiFrame{
         margin-top: 620px;
-        background-image: url();
+        background-image: url(Emiratos_Arabes_Unidos/Frame\ Dubai.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
