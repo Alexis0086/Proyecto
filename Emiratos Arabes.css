@@ -129,7 +129,7 @@ body{
     }
     
     .MuseodelFuturoImg{ 
-        background-image: url(Imagenes_Belgica/Dinant.jpg);
+        background-image: url(im);
         background-repeat: no-repeat;
         background-size:360px 245px;
         background-position: center;
