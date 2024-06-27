@@ -1,15 +1,13 @@
-
 /* Cuerpo de la página */
 body{
-    background-color: black;
-    
+    background-color: black; 
 }
 
 /* Contenedor de la totalidad de la página */
 .Container{
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Emiratos_Arabes_Unidos/Imagen\ principal\ Emiratos\ Arabes.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Tokyo/Kioto2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-style: solid;
@@ -24,7 +22,7 @@ body{
         border-left: 1px ;
         border-right: 1px;
         border-color: white;
-        margin-left:34%;
+        margin-left:46%;
         text-align: center;
         justify-content: center;
         font-size: 80px;
@@ -55,7 +53,7 @@ body{
     }
 /* Imagen principal */
     .ImgPrin{
-        background-image: url(Emiratos_Arabes_Unidos/Palm\ Jumeraih.jpg); 
+        background-image: url(Imagenes_Tokyo/Kioto.jpg); 
         background-repeat: no-repeat;
         background-size: 700px 380px;
         background-position: center;
@@ -122,14 +120,14 @@ body{
         position: absolute;
 }
 /*Tarjetas del contenido secundario ubicado a la izquierda-abajo */
-    .MuseodelFuturo{
+    .Tokyo{
         display: block;
         width: 320px ;
         height: 350px ;
     }
     
-    .MuseodelFuturoImg{ 
-        background-image: url(Emiratos_Arabes_Unidos/Museo\ del\ futuro\ \(Mediana\).jpg);
+    .TokyoImg{ 
+        background-image: url(Imagenes_Tokyo/Tokyo.JPG);
         background-repeat: no-repeat;
         background-size:360px 245px;
         background-position: center;
@@ -141,11 +139,11 @@ body{
         
     }
 
-    .MuseodelFuturoImg:hover{
+    .TokyoImg:hover{
         background-size: 400px 300px;
     }
 
-    .MuseodelFuturotext{
+    .Tokyotext{
         background-color: white;
         display: flex;
         width: 320px;
@@ -153,13 +151,13 @@ body{
         color: black;
     }
     
-    .BurjKhalifa{
+    .Mikayima{
         display: block;
         width: 315px ;
         height: 350px ;
     }
 
-    .BurjKhalifatext{
+    .Mikayimatext{
         background-color: white;
         display: flex;
         width: 315px;
@@ -167,9 +165,9 @@ body{
         color: black;
     }
 
-    .BurjKhalifaImg{
+    .MikayimaImg{
         padding-top: 4px;
-        background-image: url(Emiratos_Arabes_Unidos/Burj\ Khalifa.jpg);
+        background-image: url(Imagenes_Tokyo/Miyajima.jpeg);
         background-repeat: no-repeat;
         background-size: 320px 250px;
         background-position: center;
@@ -181,7 +179,7 @@ body{
         transition: background-size 0.25s;
     }
 
-    .BurjKhalifaImg:hover{
+    .MikayimaImg:hover{
         background-size: 350px 290px;
     }
 
@@ -237,9 +235,9 @@ body{
     }
 
 /* Tarjetas del contenido ubicado a la derecha */
-    .SkiDubai{
+    .CastilloHimeji{
         margin-top: 170px;
-        background-image: url(Emiratos_Arabes_Unidos/Ski\ Dubai.jpg);
+        background-image: url(Imagenes_Tokyo/Castillo\ Himeji.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
@@ -247,9 +245,9 @@ body{
         position: absolute;
     }
 
-    .DubaiCreek{
+    .Kobe{
         margin-top: 320px;
-        background-image: url(Emiratos_Arabes_Unidos/Dubai\ Creek.jpg);
+        background-image: url(Imagenes_Tokyo/Kobe.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 510px;
@@ -258,9 +256,9 @@ body{
     }
 
 
-    .DubaiMarina{
+    .Shirakawa-go{
         margin-top: 470px;
-        background-image: url(Emiratos_Arabes_Unidos/Dubai\ Marina.jpg);
+        background-image: url(Imagenes_Tokyo/Shirakawa-go.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
@@ -268,16 +266,12 @@ body{
         position: absolute;
     }
 
-    .DubaiFrame{
+    .Nikko{
         margin-top: 620px;
-        background-image: url(Emiratos_Arabes_Unidos/Frame\ Dubai.jpg);
+        background-image: url(Imagenes_Belgica/Amberes2.jpg);
         background-size: 170px 120px;
         background-repeat: no-repeat;
         width: 500px;
         height: 300px;
         position: absolute;
     }
-
-
-
-    

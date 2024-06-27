@@ -1,0 +1,582 @@
+/* Generalidades de la página. */
+* {    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  /* Le da una imagen al fondo. */
+  body {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(Imagenes_Tokyo/background\ img\ Kioto.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Generalidad de imagen. */
+  img {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;}
+  /* Encabezado y texto con transición del encabezado. */
+     header{
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      padding: 20px, 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+    }
+  
+    .text-header{
+      font-size: 20px;
+      font-weight: bold;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      animation: anim 2.5s linear forwards;
+      top: 3.5%;
+      align-items: center;
+      justify-content: center;
+      margin-left: 70%;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+  
+    @keyframes anim {
+      0% {
+        width: 0;
+        height: 0;
+  
+      }
+  
+      30% {
+        width: 50%;
+        height: 0;
+      }
+      60% {
+        width: 50%;
+        height: 5%;
+      }
+      80% {
+        width: 50%;
+        height: 5%;
+      }
+  
+      100% {
+        width: 50%;
+        height: 5%;
+      }
+    }
+  
+  /* Contenedor que contiene 4 de las 7 tarjetas, su función es desplegarlas horizotalmente. */
+  .card-container {
+    columns: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  /* Contenedor que contiene 3 de las 7 tarjetas, su función es desplegarlas horizotalmente. */
+  .card-container2 {
+    columns: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  /* Primera tarjeta. */
+  .card {
+    width: 330px;
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Burj\ Khalifa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card:hover .card-body {
+    right: 0;
+  }
+  
+  .card-img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Segunda tarjeta. */
+  .card2 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Dubai\ Creek.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card2:hover .card-body2 {
+    right: 0;
+  }
+  
+  .card-img2 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-body2 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle2 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info2 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn2 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Tercera tarjeta. */
+  .card3 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Dubai\ Marina.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card3:hover .card-body3 {
+    right: 0;
+  }
+  
+  .card-img3 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card-body3 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle3 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info3 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn3 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Cuarta tarjeta. */
+  .card4 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Frame\ Dubai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card4:hover .card-body4 {
+    right: 0;
+  }
+  
+  .card-img4 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card-body4 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle4 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info4 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn4 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Quinta tarjeta. */
+  .card5 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Museo\ del\ futuro\ \(Mediana\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card5:hover .card-body5 {
+    right: 0;
+  }
+  
+  .card-img5 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  
+  }
+  .card-body5 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle5 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info5 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn5 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Sexta tarjeta. */
+  .card6 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Palm\ Jumeraih.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card6:hover .card-body6 {
+    right: 0;
+  }
+  
+  .card-img6 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  
+  }
+  .card-body6 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle6 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info6 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn6 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  /* Septima tarjeta. */
+  .card7 {
+    width: 330px;
+    height: 500px;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 20px;
+   overflow: hidden;
+    border: 8px solid #ffffff;
+  
+    background-image: url(Emiratos_Arabes_Unidos/Ski\ Dubai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card7:hover .card-body7 {
+    right: 0;
+  }
+  
+  .card-img7 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 15px;
+  
+  }
+  .card-body7 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+  }
+  
+  .card-tittle7 {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  .card-info7 {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px, 0px;
+    font-weight: 400;
+  }
+  
+  .card-btn7 {
+    color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
