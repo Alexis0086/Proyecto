@@ -65,11 +65,12 @@ section{
   flex-direction: column;
   background: #0653A1 ;
 }
+/* Establece un filtro para la pantalla principal */
 .home:before{
   z-index: 777;
   content: '';
   position: absolute;
-  background: rgb(3,96, 251, 0.3);
+  background: rgba(0, 0, 0, 0.301);
   width: 100%;
   height: 100%;
   top: 0;
@@ -133,6 +134,7 @@ margin-bottom: 40px;
 .home .media-icons a:hover{
   transform: scale(1.3);
 }
+/* Ubica el video en el fondo de la página */
 .home video{
   z-index: 000;
   position: absolute;
@@ -142,6 +144,7 @@ margin-bottom: 40px;
   height: 100%;
   object-fit: cover;
 }
+/* Crea un total de 5 botones para cambiar de video */
 .slider-navigation{
   z-index: 888;
   position: relative;
@@ -151,6 +154,7 @@ margin-bottom: 40px;
   transform: translateY(80px);
   margin-top: 12px;
 }
+/* Le aplica estilo a los botones */
 .slider-navigation .nav-btn{
   width: 12px;
   height: 12px;
@@ -160,20 +164,26 @@ margin-bottom: 40px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   transition: 0.3s ease;
 }
+/* El color que se le coloca al boton cuando se le pulsa (funciona gracias al java del html) */
 .slider-navigation .nav-btn.active{
   background: #2696e9;
 }
+/* Crea un espacio entre los botones */
 .slider-navigation .nav-btn:not(:last-child){
 margin-right: 20px;
 }
+/* Les da una animación de agrandado a los botones */
 .slider-navigation .nav-btn:hover{
 transform: scale(1.2);
 }
+/* Para utilizar clip-path ahi que referenciarlo al inicio del html */
+/* Gracias a la página CSS clip-phat maker se puede crear esta transición de un circulo agrandandose*/
 .video-slide{
   position: absolute;
   width: 100%;
   clip-path: circle(0% at 0 50%);
 }
+/* Es la indicacion de hasta donde se tiene que correr el circulo */
 .video-slide.active{
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
@@ -199,6 +209,7 @@ section {
   min-height: 100%;
 
 }
+/* Enlazado con el html permite que se cierre y se abra la lista desplegable */
 header .navigation {
  display: none;
 }
@@ -214,7 +225,7 @@ header .navigation.active{
   align-items: center;
   background: rgba(1, 1, 1, 0.5);
 }
-
+/* Son las animaciones que se le implementan a las palabras de la lista desplegable */
 header .navigation .navigation-items a{
   color: #222;
   font-size: 1.2em;
@@ -224,6 +235,7 @@ header .navigation .navigation-items a:before{
   background: #222;
   height: 5px;
 }
+/* Establece un marco para la lista que se despliega */
 header .navigation.active .navigation-items{
 background: #fff;
 width: 600px;
