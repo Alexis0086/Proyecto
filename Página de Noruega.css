@@ -1,0 +1,281 @@
+body{
+    background-color: black;
+    
+}
+
+/* Contenedor de la totalidad de la página */
+.Container{
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Belgica/Atomium.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-style: solid;
+    height: 1100px;
+    width: 100%;
+    }
+
+/* Encabezado */
+    header{
+        margin-top: 10px;
+        border-style: solid;
+        border-left: 1px ;
+        border-right: 1px;
+        border-color: white;
+        margin-left:42%;
+        text-align: center;
+        justify-content: center;
+        font-size: 80px;
+        position: absolute;
+        color: white;
+        text-transform: uppercase;
+    }
+       
+/* Contenido de la página */
+    .Content{
+        margin: auto;
+        width: 1400px;
+        height: 1100px;
+        display: flex;
+    }
+
+    .Content a{
+        text-decoration: none;
+    }
+
+/* Contenido ubicado a la izquierda de la página */
+    .ContentLeft{
+        margin-top: 150px;
+        margin-left: 120px;
+        background-size: cover;
+        width: 655px;
+        height: 805px;
+    }
+/* Imagen principal */
+    .ImgPrin{
+        background-image: url(Imagenes_Noruega/Stavanger.jpeg); 
+        background-repeat: no-repeat;
+        background-size: 700px 380px;
+        background-position: center;
+        height: 380px;
+        width: 640px;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 35px;
+        padding-top: 0.5px;
+        padding-left: 14px;
+        overflow: hidden;
+        transition: background-size 0.25s;
+    }
+
+    .ImgPrin:hover{
+        background-size: 750px 410px;
+    }
+
+/* Contenido secundario ubicado a la izquierda-abajo */
+    .ContentSecLeft {
+        margin-top: 20px;
+        display: flex;
+        position: absolute;
+        background-size: cover;
+        height: 270px;
+        width: 800px;
+        gap: 20px;
+    }
+
+/* Texto del contenido secundario ubicado a la izquierda-abajo */
+    .ContentSecLeft h1{
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 35px;
+        color: white;
+        padding-left: 15px;
+    }
+    
+    .ContentSecLeft h2{
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 25px;
+        margin-left: 17px;
+        margin-right: 3px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+    .ContentSecLeft p{
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600PX;
+        font-style: normal;
+        font-size: 25px;
+        margin-top: 70px;
+        margin-left: 20px;
+        position: absolute;
+}
+/*Tarjetas del contenido secundario ubicado a la izquierda-abajo */
+    .Dinant{
+        display: block;
+        width: 320px ;
+        height: 350px ;
+    }
+    
+    .DinantImg{ 
+        background-image: url(Imagenes_Noruega/Tromso.jpeg);
+        background-repeat: no-repeat;
+        background-size:360px 245px;
+        background-position: center;
+        height: 245px;
+        width: 310px;
+        padding-left: 10px;
+        padding-top: 0.5px;
+        transition: background-size 0.25s;
+        
+    }
+
+    .DinantImg:hover{
+        background-size: 400px 300px;
+    }
+
+    .Dinanttext{
+        background-color: white;
+        display: flex;
+        width: 320px;
+        height: 140px;
+        color: black;
+    }
+    
+    .Amberes{
+        display: block;
+        width: 315px ;
+        height: 350px ;
+    }
+
+    .Amberestext{
+        background-color: white;
+        display: flex;
+        width: 315px;
+        height: 140px;
+        color: black;
+    }
+
+    .AmberesImg{
+        padding-top: 4px;
+        background-image: url(Imagenes_Noruega/Oslo.jpeg);
+        background-repeat: no-repeat;
+        background-size: 320px 250px;
+        background-position: center;
+        height: 240px;
+        width: 305px;
+        font-weight: 1000;
+        padding-left: 10px;
+        overflow: hidden;
+        transition: background-size 0.25s;
+    }
+
+    .AmberesImg:hover{
+        background-size: 350px 290px;
+    }
+
+ /* Contenido ubicado a la derecha */
+    .ContentRight{
+        margin-top: 160px;
+        margin-left: 80px;
+        width: 600px;
+        transition: all;
+    }
+    
+/* Encabezado del contenido a la derecha */
+    .MasLugares{
+        width: 200px;
+        height: 100px;
+        color: white;
+        display: flex;
+        position: absolute;
+    }
+    .MasLugares::before{
+    background:gold;
+    content: "";
+    display: block;
+    flex: 0 0 5px;
+    margin-right: 20px;
+    position: relative;
+    }
+
+/* Texto del contenido ubicado a la derecha */
+    .ContentRight  a :hover{
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+    .ContentRight h2{
+        padding-left: 230px;
+        color: white;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 25px;
+        font-family: "Playfair Display", serif;
+        position: absolute;
+    }
+
+    .ContentRight p{
+        color: white;
+        padding-left: 230px;
+        padding-top: 40px;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-size: 17px;
+        font-family: "Playfair Display", serif;
+    }
+
+/* Tarjetas del contenido ubicado a la derecha */
+    .Malinas{
+        margin-top: 170px;
+        background-image: url(Imagenes_Noruega/Lofoten.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
+
+    .Brujas{
+        margin-top: 320px;
+        background-image: url(Imagenes_Noruega/Nordland.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 510px;
+        height: 300px;
+        position: absolute;
+    }
+
+
+    .Gante{
+        margin-top: 470px;
+        background-image: url(Imagenes_Noruega/Bergen.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
+
+    .Lieja{
+        margin-top: 620px;
+        background-image: url(Imagenes_Noruega/Geiranger.jpeg);
+        background-size: 170px 120px;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+        position: absolute;
+    }
+
+
+
+    
