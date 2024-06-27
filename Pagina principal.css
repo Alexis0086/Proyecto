@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* Crea un espacio entre las palabras de la cabecera */
 header{
   z-index: 999;
   position: absolute;
@@ -16,6 +17,7 @@ header{
   padding: 15px 200px;
   transition: 0.5s ease;
 }
+/* El logo de la página */
 header .brand{
   color: #fff;
   font-size: 1.5em;
@@ -23,6 +25,7 @@ header .brand{
   text-transform: uppercase;
   text-decoration: none;
 }
+/* Ajusta, crea y estiliza las palabras en la cabecera y luego le añade una cabecera */
 header .navigation{
   position: relative;
 }
@@ -48,9 +51,11 @@ header .navigation .navigation-items a:before{
 header .navigation .navigation-items a:hover:before{
   width: 100%;
 }
+/* Crea un area especifica para el texto */
 section{
   padding: 100px 200px;
 }
+/* Establece la posición de texto y le da color al fondo */
 .home{
   position: relative;
   width: 100%;
@@ -70,6 +75,7 @@ section{
   top: 0;
   left: 0;
 }
+/* Ajusta el texto */
 .home .content{
   z-index: 888;
   color: #fff;
@@ -80,6 +86,7 @@ section{
 .home .content.active{
   display: block;
 }
+/* Estiliza el texto */
 .home .content h1{
 font-size: 4em;
 font-weight: 900;
@@ -88,10 +95,12 @@ letter-spacing: 5px;
 line-height: 75px;
 margin-bottom: 40px;
 }
+/* Estiliza el subtitulo */
 .home .content h1 span{
   font-size: 1.7em;
   font-weight: 600;
 }
+/* Crea un cuadro para desplegar mas información */
 .home .content p{
   margin-bottom: 65px;
 }
@@ -104,6 +113,7 @@ margin-bottom: 40px;
   text-decoration: none;
   border-radius: 2px;
 }
+/* Alines los iconos de las redes sociales */
 .home .media-icons{
   z-index: 888;
   position: absolute;
@@ -116,6 +126,7 @@ margin-bottom: 40px;
   color: #fff;
   font-size: 1.6em;
 }
+/* Le da a los iconos una animación de agrandado */
 .home .media-icons a:not(:last-child){
   margin-bottom: 20px;
 }
@@ -169,7 +180,7 @@ transform: scale(1.2);
   transition-property: clip-path;
 }
 
-
+/* Alinea los componentes de la pagina */
 @media (max-width: 1040px){
   header {
     padding: 12px 20px;
@@ -191,6 +202,7 @@ section {
 header .navigation {
  display: none;
 }
+/* Ubica la lista que aparece en el menu desplegable */
 header .navigation.active{
   position: fixed;
   width: 100%;
@@ -223,6 +235,7 @@ flex-direction: column;
 align-items: center;
 border-radius: 0 5px 25px rgb(1 1 1 /20%);
 }
+/* Crea una lista que aparece cuando la pagina esta minimizada */
 .menu-btn{
   background: url(Imagenes_Inicio/3943401-200.png)no-repeat;
   background-size: 30px;
@@ -232,6 +245,7 @@ border-radius: 0 5px 25px rgb(1 1 1 /20%);
   cursor: pointer;
   transition: 0.3s ease;
 }
+/* Hace que cuando se presione el boton se active la función */
 .menu-btn.active{
   z-index: 999;
   background: url(Logo/close-icon-png-2.jpg)no-repeat;

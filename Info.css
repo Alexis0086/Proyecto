@@ -1,10 +1,11 @@
+/* Generalidades de la página. */
 * {    margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-
+/* Le da una imagen al fondo. */
 body {
-  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(Imagenes_Belgica/Lieja.jpeg); 
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(Imagenes_Belgica/Lieja.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,16 +14,68 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* Generalidad de imagen. */
 img {
   height: 300px;
   width: 500px;
   position: relative;
   align-items: center;
   justify-content: center;
-  display: flex;
-}
+  display: flex;}
+/* Encabezado y texto con transición del encabezado. */
+   header{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px, 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+  }
 
+  .text-header{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    animation: anim 2.5s linear forwards;
+    top: 3.5%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @keyframes anim {
+    0% {
+      width: 0;
+      height: 0;
+
+    }
+
+    30% {
+      width: 50%;
+      height: 0;
+    }
+    60% {
+      width: 50%;
+      height: 5%;
+    }
+    80% {
+      width: 50%;
+      height: 5%;
+    }
+
+    100% {
+      width: 50%;
+      height: 5%;
+    }
+  }
+
+/* Contenedor que contiene 4 de las 7 tarjetas, su función es desplegarlas horizotalmente. */
 .card-container {
   columns: 4;
   display: flex;
@@ -30,7 +83,7 @@ img {
   align-items: center;
   position: relative;
 }
-
+/* Contenedor que contiene 3 de las 7 tarjetas, su función es desplegarlas horizotalmente. */
 .card-container2 {
   columns: 4;
   display: flex;
@@ -38,7 +91,7 @@ img {
   align-items: center;
   position: relative;
 }
-
+/* Primera tarjeta. */
 .card {
   width: 330px;
   width: 330px;
@@ -59,7 +112,7 @@ img {
 }
 
 .card:hover .card-body {
-  right: 0; 
+  right: 0;
 }
 
 .card-img {
@@ -109,7 +162,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Segunda tarjeta. */
 .card2 {
   width: 330px;
   height: 500px;
@@ -129,7 +182,7 @@ img {
 }
 
 .card2:hover .card-body2 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img2 {
@@ -179,7 +232,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Tercera tarjeta. */
 .card3 {
   width: 330px;
   height: 500px;
@@ -192,14 +245,14 @@ img {
  overflow: hidden;
   border: 8px solid #ffffff;
 
-  background-image: url(Imagenes_Belgica/Bruselas.jpg);
+  background-image: url(Imagenes_Belgica/Bruxelas1.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card3:hover .card-body3 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img3 {
@@ -248,7 +301,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Cuarta tarjeta. */
 .card4 {
   width: 330px;
   height: 500px;
@@ -261,14 +314,14 @@ img {
  overflow: hidden;
   border: 8px solid #ffffff;
 
-  background-image: url(Imagenes_Belgica/Brujas.jpeg);
+  background-image: url(Imagenes_Belgica/Brujas2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card4:hover .card-body4 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img4 {
@@ -317,7 +370,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Quinta tarjeta. */
 .card5 {
   width: 330px;
   height: 500px;
@@ -337,7 +390,7 @@ img {
 }
 
 .card5:hover .card-body5 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img5 {
@@ -387,7 +440,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Sexta tarjeta. */
 .card6 {
   width: 330px;
   height: 500px;
@@ -407,7 +460,7 @@ img {
 }
 
 .card6:hover .card-body6 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img6 {
@@ -457,7 +510,7 @@ img {
   cursor: pointer;
   font-weight: 500;
 }
-
+/* Septima tarjeta. */
 .card7 {
   width: 330px;
   height: 500px;
@@ -477,7 +530,7 @@ img {
 }
 
 .card7:hover .card-body7 {
-  right: 0; 
+  right: 0;
 }
 
 .card-img7 {
@@ -526,60 +579,4 @@ img {
   outline: none;
   cursor: pointer;
   font-weight: 500;
-}
-
-.text-header{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0%;
-  margin: 0%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-bottom: .3vw solid #ffffff;
-  overflow: hidden;
-  animation: anim 2.5s linear forwards; 
-  top: 3.5%;
-  align-items: center;
-  justify-content: center;
-  margin-left: 50%;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-@keyframes anim {
-  0% {
-    width: 0;
-    height: 0;
-
-  }
-
-  30% {
-    width: 50%;
-    height: 0;
-  }
-  60% {
-    width: 50%;
-    height: 5%;
-  }
-  80% {
-    width: 50%;
-    height: 5%;
-  }
-
-  100% {
-    width: 50%;
-    height: 5%;
-  }
-}
-
-header {
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.518);
-  padding: 20px, 20px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  justify-content: center;
 }

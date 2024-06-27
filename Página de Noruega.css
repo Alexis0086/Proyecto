@@ -7,7 +7,7 @@ body{
 .Container{
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Belgica/Atomium.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(Imagenes_Noruega/Noruega.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-style: solid;
@@ -120,13 +120,13 @@ body{
         position: absolute;
 }
 /*Tarjetas del contenido secundario ubicado a la izquierda-abajo */
-    .Dinant{
+    .TROMSO{
         display: block;
         width: 320px ;
         height: 350px ;
     }
     
-    .DinantImg{ 
+    .TROMSOImg{ 
         background-image: url(Imagenes_Noruega/Tromso.jpeg);
         background-repeat: no-repeat;
         background-size:360px 245px;
@@ -139,11 +139,11 @@ body{
         
     }
 
-    .DinantImg:hover{
+    .TROMSOImg:hover{
         background-size: 400px 300px;
     }
 
-    .Dinanttext{
+    .TROMSOtext{
         background-color: white;
         display: flex;
         width: 320px;
@@ -151,13 +151,13 @@ body{
         color: black;
     }
     
-    .Amberes{
+    .OSLO{
         display: block;
         width: 315px ;
         height: 350px ;
     }
 
-    .Amberestext{
+    .OSLOtext{
         background-color: white;
         display: flex;
         width: 315px;
@@ -165,7 +165,7 @@ body{
         color: black;
     }
 
-    .AmberesImg{
+    .OSLOImg{
         padding-top: 4px;
         background-image: url(Imagenes_Noruega/Oslo.jpeg);
         background-repeat: no-repeat;
@@ -179,7 +179,7 @@ body{
         transition: background-size 0.25s;
     }
 
-    .AmberesImg:hover{
+    .OSLOImg:hover{
         background-size: 350px 290px;
     }
 
@@ -235,7 +235,7 @@ body{
     }
 
 /* Tarjetas del contenido ubicado a la derecha */
-    .Malinas{
+    .LOFOTEN{
         margin-top: 170px;
         background-image: url(Imagenes_Noruega/Lofoten.jpeg);
         background-size: 170px 120px;
@@ -245,7 +245,7 @@ body{
         position: absolute;
     }
 
-    .Brujas{
+    .NORDLAND{
         margin-top: 320px;
         background-image: url(Imagenes_Noruega/Nordland.jpeg);
         background-size: 170px 120px;
@@ -256,7 +256,7 @@ body{
     }
 
 
-    .Gante{
+    .BERGEN{
         margin-top: 470px;
         background-image: url(Imagenes_Noruega/Bergen.jpeg);
         background-size: 170px 120px;
@@ -266,7 +266,7 @@ body{
         position: absolute;
     }
 
-    .Lieja{
+    .GEIRANGER{
         margin-top: 620px;
         background-image: url(Imagenes_Noruega/Geiranger.jpeg);
         background-size: 170px 120px;
