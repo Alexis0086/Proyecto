@@ -2,7 +2,7 @@ const Destinos = {
     Bélgica: {
         ImagenPais: '',
         DescripcionPais: 'Un pequeño país con un inmenso corazón europeo, donde cada ciudad revela una historia, sabores irresistibles y un arte que deslumbra',
-        Bandera: '../ImagenesDestinos/Japon/Lieja.jpg',
+        Bandera: '',
         Amberes: {
             Nombre: 'Amberes',
             Imagen: '',
@@ -10,7 +10,7 @@ const Destinos = {
         },
         Dinant: {
             Nombre: 'Dinant',
-            Imagen: 'url("../ImagenesDestinos/Noruega/OIP.jpg")',
+            Imagen: '',
             Descripcion: 'Emplazada a orillas del Mosa, Dinant te cautivará con sus imponentes acantilados, la majestuosa ciudadela y el legado del jazz de Adolphe Sax.',
         },
         Brujas: {
