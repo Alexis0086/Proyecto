@@ -56,10 +56,4 @@ const Destinos = {
             Descripcion: 'Luces, bullicio y diversión: Osaka es un lugar de diversión y entretenimiento con pocas pretensiones.',
         }
     },
-
-
-    Noruega: {
-        ImagenPais: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
-        Bandera: '../ImagenesDestinos/Japon/Shibuya.jpg',
-    }
 }

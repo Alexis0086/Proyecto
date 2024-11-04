@@ -1,4 +1,4 @@
-let OpciónElegida = 'Japón'
+let OpciónElegida = ''
 
 // Crea las etiquetas que almacenaran el nombre del lugar y una breve descripcion
 let NombreDestino = document.createElement('h1')
@@ -19,6 +19,7 @@ document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises)
 for(let Pais in Destinos){
     let BanderaPais = document.createElement('img')
     BanderaPais.src = Destinos[Pais].Bandera
+    BanderaPais.id = `Imagen${Pais}`
     document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais)
     
 }
@@ -27,7 +28,7 @@ let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelecto
 Banderas.forEach(Bandera => {
     Bandera.addEventListener('click', function(){
         for(let Pais in Destinos){
-            if(Bandera.src.includes(Destinos[Pais].Bandera)){
+            if(Bandera.id == `Imagen${Pais}`){
                 OpciónElegida = Pais
                 MostrarDestinos()
             }
@@ -105,6 +106,7 @@ function ImgPrincipalyRemover(Ciudades, opcion){
             DescripcionDestino.innerText = Ciudad.Descripcion
             NombreDestino.classList.add('AnimacionDeEntradaTexto')
             DescripcionDestino.classList.add('AnimacionDeEntradaTexto')
+            CambiarInformaciónAdicional(Ciudad)
 
             let Indice = Ciudades.indexOf(Ciudad)
                 Ciudades.splice(Indice, 1)
@@ -122,6 +124,13 @@ function ImgPrincipalyRemover(Ciudades, opcion){
             
         }, 800)
        })
+}
+
+
+//Alexis de aquí pa abajo es lo suyo
+
+function CambiarInformaciónAdicional(Ciudad){
+    console.log(Ciudad)
 }
 
 
