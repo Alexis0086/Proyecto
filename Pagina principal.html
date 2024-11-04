@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Pagina principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Geographic tour</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+            <a href="Pagina principal.html">Inicio</a>
+            <a href="Pagina Belgica.html">Belgica</a>
+            <a href="Página Japon.HTML">Japon</a>
+            <a href="Pagina Belgica.html">Emiratos Arabes</a>
+            <a href="Página de Noruega.html">Noruega</a>
+            <a href="paginadeiniciodeseión.html">Inicio de sesion</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="Logo/Video de WhatsApp 2024-06-22 a las 17.08.55_7bccf6dc.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 16.59.26_e08049a1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 17.06.09_8fdc201e.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 16.56.44_26d61021 copy.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 22.13.15_329a493b.mp4" autoplay muted loop></video>
+        
+        <div class="content active">
+            <h1>Hermosos <br><span>Lugares</span></h1>
+            <p>En Geographic Tour creamos una página capaz de mostrar algunos de los lugares más hermosos y recomendados de la estación. Aquí encontraras los sitios turísticos más llamativos de cada país logrando así que nuestros usuarios tengan la información nesesaria para sus futuros viajes.</p>
+                <a href="#">Mas información</a>
+        </div>
+        <div class="content">
+            <h1>Jápon <br><span>Mágico</span></h1>
+            <p>Descubre los numerosos eventos y festivales, templos y castillos, parques temáticos y aguas termales, playas y actividades al aire libre que ofrece Japón. Si te entusiasma el deporte, amas el arte, te apasiona la naturaleza o estás loco por la historia o la gastronomía, o si solo buscas relajarte en una playa, Japón te ofrece eso y mucho más.</p>
+                <a href="Página Japon.HTML">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Noruega <br><span>Mitico</span></h1>
+            <p>Noruega ofrece mil y una cosas que ver y hacer: vibrantes zonas urbanas, hermosos fiordos, la aurora boreal o remotas aldeas al norte del Círculo polar ártico.</p>
+                <a href="Página Noruega.html">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Emiratos  <br><span>Arabes</span></h1>
+            <p>Emiratos Árabes Unidos es uno de los países más visitados de Oriente Medio. Está compuesto por siete emiratos, y cada uno conserva una moderada autonomía política, económica y judicial. El más visitado es el emirato de Dubai, formado por una de las ciudades más espectaculares que ver en los Emiratos Árabes Unidos. </p>
+                <a href="Emiratos Arabes.html">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Belgica <br><span>Esplendido</span></h1>
+            <p>El Reino de Bélgica o Bélgica, como comúnmente se le titula, es un país de Europa que aunque es popular por su nombre, no lo es en un sentido turístico, y no porque no posea las cualidades para ser satisfactoriamente visitado, sino que es por la falta de publicidad al mismo.</p>
+                <a href="Página Belgica.html">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        </div>
+    </section>
+<script type="text/javascript">
+//Javascript para la lista desplazable
+const menuBtn = document.querySelector(".menu-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+});
+
+//Javascript para la etiqueta slide del video (sirve para que los botones funcionen4)
+const btns = document.querySelectorAll(".nav-btn")
+const slides = document.querySelectorAll(".video-slide")
+const contents = document.querySelectorAll(".content")
+
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+    btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+    slide.classList.remove("active");
+    });
+
+    contents.forEach((content) => {
+    content.classList.remove("active");
+    });
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+}
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    })
+})
+
+</script>
+</body>
+</html>
