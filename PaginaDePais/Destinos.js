@@ -41,11 +41,19 @@ const Destinos = {
         Bandera: '../ImagenesDestinos/Japon/Japon_bandera.png',
         Tokio: {
             Nombre: 'Tokio',
-            Imagen: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
+            Descripcion: 'Tokio es una combinación de la tradición y la modernidad. La ciudad es conocida por su gastronomía, festivales, artes y entretenimiento, que atraen a turistas de todo el mundo.',
         },
         Kioto: {
             Nombre: 'Kioto',
             Imagen: 'url("../ImagenesDestinos/Japon/Kioto Kiyumisu (no 360).jpg")',
+            Descripcion: 'Kioto se encuentra rodeada de una rica belleza natural, y es una ciudad con un repertorio único que muestra una cultura de gran atractivo',
+        },
+         
+        Osaka: {
+            Nombre: 'Osaka',
+            Imagen: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
+            Descripcion: 'Luces, bullicio y diversión: Osaka es un lugar de diversión y entretenimiento con pocas pretensiones.',
         }
     },
 
