@@ -1,4 +1,4 @@
-let OpciónElegida = 'Japón'
+let OpciónElegida = 'Bélgica'
 
 // Crea las etiquetas que almacenaran el nombre del lugar y una breve descripcion
 let NombreDestino = document.createElement('h1')

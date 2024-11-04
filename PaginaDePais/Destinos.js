@@ -10,7 +10,7 @@ const Destinos = {
         },
         Dinant: {
             Nombre: 'Dinant',
-            Imagen: 'url("../ImagenesDestinos/Belgica/Dinant.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Belgica/Amberes.jpg")',
             Descripcion: 'Emplazada a orillas del Mosa, Dinant te cautivará con sus imponentes acantilados, la majestuosa ciudadela y el legado del jazz de Adolphe Sax.',
         },
         Brujas: {
