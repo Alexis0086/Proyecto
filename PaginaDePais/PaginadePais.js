@@ -1,0 +1,131 @@
+let OpciónElegida = ''
+
+
+
+// Crea las etiquetas que almacenaran el nombre del lugar y una breve descripcion
+let NombreDestino = document.createElement('h1')
+NombreDestino.id = 'NombreDestino'
+
+let DescripcionDestino = document.createElement('p')
+DescripcionDestino.id = 'DescripcionDestino'
+
+document.getElementById('ImagenFondo').appendChild(NombreDestino)    
+document.getElementById('ImagenFondo').appendChild(DescripcionDestino)    
+
+let ContenedorOpciones = document.getElementById('ContenedorOpciones')
+
+let BarraDeNavegacionDePaises = document.createElement('div')
+BarraDeNavegacionDePaises.id = 'BarraDeNavegaciondePaise'
+document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises)    
+
+for(let Pais in Destinos){
+    let BanderaPais = document.createElement('img')
+    BanderaPais.src = Destinos[Pais].Bandera
+    document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais)
+    
+}
+
+let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelectorAll('img')
+Banderas.forEach(Bandera => {
+    Bandera.addEventListener('click', function(){
+        for(let Pais in Destinos){
+            if(Bandera.src.includes(Destinos[Pais].Bandera)){
+                OpciónElegida = Pais
+                MostrarDestinos()
+            }
+        }
+    })
+})
+
+
+
+
+/*Revisa todos los objetos hasta llegar a llaves que no sean objetos (Imagen, Nombre, Descripcion)
+y crea las etiquetas que mostraran las opciones de destino por pais*/
+
+let Ciudades = []
+let RecorrerDestinos = (Objeto) => {
+    for(let Pais in Objeto){
+        if(typeof Objeto[Pais] == 'object'){
+            RecorrerDestinos(Objeto[Pais])
+        }else{
+            if(!Ciudades.includes(Objeto) && !Object.keys(Objeto).includes('ImagenPais')){
+                ContenedorOpciones.innerHTML = ''
+                Ciudades.push(Objeto)
+                Ciudades.forEach(Ciudad => {
+                    let opcionDiv = document.createElement('div')
+                    opcionDiv.style.backgroundImage = `${Ciudad.Imagen}`
+                    opcionDiv.classList = 'OpcionDestino'
+                    let NombreCiudad = document.createElement('h1')
+                    NombreCiudad.innerText = Ciudad.Nombre
+                    opcionDiv.appendChild(NombreCiudad)
+                    ContenedorOpciones.appendChild(opcionDiv)
+                    
+                    let opciones = ContenedorOpciones.querySelectorAll('div')
+                    opciones.forEach(opcion => {
+                        opcion.addEventListener('click', function(){
+                            ImgPrincipalyRemover(Ciudades, opcion)
+                        })
+                    })
+                })
+            }
+        }
+    } 
+}
+
+
+// Activa la función 'Recorrer Destinos' cuando el usuario elige un pais, para mostrar los destinos con respecto a ese pais
+function MostrarDestinos(){
+    for(let Pais in Destinos){
+        if(Pais == OpciónElegida){
+            ContenedorOpciones.innerHTML = ''
+            Ciudades = []
+            document.getElementById('ImagenPrincipal').style. backgroundImage = ''
+            document.getElementById('ImagenFondo').style. backgroundImage = ''
+            RecorrerDestinos(Destinos[Pais])
+            document.getElementById('ImagenPrincipal').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
+            document.getElementById('ImagenFondo').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
+            NombreDestino.innerText = Pais
+            DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
+        }
+    }
+}
+MostrarDestinos()
+
+
+/*Se encarga de hacer la animación y cambiar los datos cuando el usuario elija una cuidad
+    Además, mueve la opcion elegida al final*/
+
+function ImgPrincipalyRemover(Ciudades, opcion){
+    document.getElementById('ImagenPrincipal').classList.add('AnimacionDeEntrada')
+    document.getElementById('ImagenPrincipal').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${opcion.style.backgroundImage}`
+   
+    opcion.remove()
+    Ciudades.forEach(Ciudad => {
+        if(Ciudad.Imagen == opcion.style.backgroundImage){
+            NombreDestino.innerText = Ciudad.Nombre
+            DescripcionDestino.innerText = Ciudad.Descripcion
+            NombreDestino.classList.add('AnimacionDeEntradaTexto')
+            DescripcionDestino.classList.add('AnimacionDeEntradaTexto')
+
+            let Indice = Ciudades.indexOf(Ciudad)
+                Ciudades.splice(Indice, 1)
+            Ciudades.push(Ciudad)
+            ContenedorOpciones.appendChild(opcion)
+        }
+        setTimeout(() => {
+            document.getElementById('ImagenFondo').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${opcion.style.backgroundImage}`
+        }, 810)
+
+        setTimeout(() => {
+                document.getElementById('ImagenPrincipal').classList.remove('AnimacionDeEntrada')
+                NombreDestino.classList.remove('AnimacionDeEntradaTexto')
+                DescripcionDestino.classList.remove('AnimacionDeEntradaTexto')
+            
+        }, 800)
+       })
+}
+
+
+
+

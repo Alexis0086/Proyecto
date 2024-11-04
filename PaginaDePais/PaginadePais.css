@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+}
+
+
+#ImagenFondo{
+    background-size: 100vw 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#ImagenPrincipal{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 70vw;
+    position: absolute; 
+    width: 100vw;
+    height: 100vw;
+}
+
+#NombreDestino{
+    text-align: start;
+    margin: 0vh 70vw 5vh 0vw;
+    z-index: 1;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.867);
+    font-size: 7vw;
+    width: 25vw;
+}
+
+#DescripcionDestino{
+    text-align: start;
+    margin: 23vh 65vw 0vh 0vw;
+    z-index: 1;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.841);
+    font-size: 1.3vw;
+    width: 27vw;
+}
+
+#BarraDeNavegaciondePaises{
+    margin: 72vh 0vw 0vh 3vw;
+    height: 7vh;
+    position: absolute;
+    display: flex;
+    gap: 2vw;
+    width: 27vw;
+}
+
+
+#BarraDeNavegaciondePaises img{
+    border-radius: 100%;
+    height: 6vh;
+    width: 3vw;
+}
+
+#ContenedorOpciones{
+    gap: 2vw;
+    display: flex;
+    margin: 30vh 0vw 0vw 33vw;
+    height: 56vh;
+    width: 105vw;
+    z-index: 1;
+}
+
+.OpcionDestino{
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    width: 30vw;
+    height: 55vh;
+}
+
+.OpcionDestino h1{
+    width: 14vw;
+    margin: 46vh 0vw 0vw 1vw;
+    font-size: 2vw;
+    color: white;
+    text-shadow: 10px 10px 9px black;
+}
+
+
+
+.AnimacionDeEntrada{
+    animation-name: AnimacionDeEntrada;
+    animation-duration: 0.8s;
+}
+
+@keyframes AnimacionDeEntrada {
+    from{
+        width: 0%;
+        height: 0%;
+        background-size: 0vw 0vw;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+        background-size: 100vw 70vw;
+    }
+}
+
+.AnimacionDeEntradaTexto{
+    animation-name: AnimacionDeEntradaTexto;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes AnimacionDeEntradaTexto {
+    from{
+        margin-left: 10vw;
+        opacity: 0%;
+    }
+    to{
+        margin-left: 0vw;
+        opacity: 100%;
+    }
+}
