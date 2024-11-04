@@ -2,10 +2,10 @@ const Destinos = {
     Bélgica: {
         ImagenPais: 'url("../ImagenesDestinos/Belgica/Belgica.jpg")',
         DescripcionPais: 'Un pequeño país con un inmenso corazón europeo, donde cada ciudad revela una historia, sabores irresistibles y un arte que deslumbra',
-        Bandera: '../ImagenesDestinos/Belgica/BanderaBelgica.jpg',
+        Bandera: '../ImagenesDestinos/Japon/Shibuya.jpg',
         Amberes: {
             Nombre: 'Amberes',
-            Imagen: 'url("../ImagenesDestinos/Belgica/Amberes.jpg")',
+            Imagen: 'url(../ImagenesDestinos/Belgica/Amberes.jpg)',
             Descripcion: 'Amberes, la capital mundial de los diamantes, deslumbra con su impresionante puerto, su catedral gótica y su vibrante escena artística.',
         },
         Dinant: {
@@ -37,20 +37,21 @@ const Destinos = {
     },
     Japón: {
         ImagenPais: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
-        DescripcionPais: 'Un archipiélago donde tradición y modernidad se entrelazan, invitándote a descubrir sus templos antiguos, su tecnología de punta y una cultura única',
+        DescripcionPais: 'Japón es un país con una rica historia y cultura que se remonta a miles de años. El país ha sido influenciado por una variedad de culturas, incluidas las de China, Corea y Occidente.',
         Bandera: '../ImagenesDestinos/Japon/Japon_bandera.png',
         Tokio: {
             Nombre: 'Tokio',
-            Imagen: 'url("Imagenes/Japon/Tokio.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
         },
         Kioto: {
             Nombre: 'Kioto',
-            Imagen: 'url("Imagenes/Japon/Kioto.jpg!d")'
+            Imagen: 'url("../ImagenesDestinos/Japon/Kioto Kiyumisu (no 360).jpg")',
         }
     },
 
 
     Noruega: {
-        Bandera: 'Imagenes/Noruega/BanderaNoruega.jpg',
+        ImagenPais: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
+        Bandera: '../ImagenesDestinos/Japon/Shibuya.jpg',
     }
 }
