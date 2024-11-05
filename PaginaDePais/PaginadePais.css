@@ -79,18 +79,18 @@ body{
     z-index: 1;
 }
 
-.OpcionDestino{
+.OpcionDestino{    
     border-radius: 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 40vw 32vw;
     width: 30vw;
-    height: 32vw;
+    height: 26vw;
 }
 
 .OpcionDestino h1{
     width: 14vw;
-    margin: 28vw 0vw 0vw 1vw;
+    margin: 22vw 0vw 0vw 1vw;
     font-size: 2vw;
     color: white;
     text-shadow: 10px 10px 9px black;
@@ -140,6 +140,11 @@ body{
     width: 99vw;
     height: 60vh;
 }
+
+#PanoramicaDeLugar IMG{
+     width: 9vw;
+     height: 6vh;
+ }
 
 
 iframe{

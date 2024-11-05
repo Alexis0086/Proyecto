@@ -2,6 +2,7 @@ const Destinos = {
     Bélgica: {
         ImagenPais: 'url("../ImagenesDestinos/Belgica/Belgica.jpg")',
         DescripcionPais: 'Un pequeño país con un inmenso corazón europeo, donde cada ciudad revela una historia, sabores irresistibles y un arte que deslumbra',
+        ImagenPais2: '<img src="../ImagenesDestinos/Belgica/BelgicaImg.jpg" alt="">',
         Bandera: '../ImagenesDestinos/Belgica/BanderaBelgica.jpg',
         Amberes: {
             Nombre: 'Amberes',

@@ -86,6 +86,8 @@ function MostrarDestinos(){
             document.getElementById('ImagenFondo').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
             NombreDestino.innerText = Pais
             DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
+            console.log(Destinos[Pais].ImagenPais2)
+            document.getElementById('PanoramicaDeLugar').innerHTML = Destinos[Pais].ImagenPais2
         }
     }
 }
