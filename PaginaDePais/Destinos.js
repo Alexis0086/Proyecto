@@ -51,6 +51,7 @@ const Destinos = {
             Imagen: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             Descripcion: 'Tokio es una combinación de la tradición y la modernidad. La ciudad es conocida por su gastronomía, festivales, artes y entretenimiento, que atraen a turistas de todo el mundo.',
         },
+
         Kioto: {
             Nombre: 'Kioto',
             Imagen: 'url("../ImagenesDestinos/Japon/Kioto Kiyumisu (no 360).jpg")',
@@ -65,19 +66,19 @@ const Destinos = {
         
         Kanagawa:{
             Nombre: 'Kanagawa',
-            Imagen: 'url("../ImagenesDestinos/Tsurugizaki, Kanagawa.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")',
             Descripcion: '',
         },
 
-        Nara:{
+        Nara: {
             Nombre: 'Nara',
-            Imagen: 'url("../ImagenesDestinos/Nara Daibustu.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Japon/Nara Daibustu.jpg")',
             Descripcion: '',
         },
 
         Hiroshima:{
             Nombre: 'Hiroshima',
-            Imagen: 'url("../ImagenesDestinos/")',
+            Imagen: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
             Descripcion: '',
         }
     },

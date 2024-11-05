@@ -9,6 +9,7 @@ body{
 }
 
 
+/* Div de la imagen ubicada atras */
 #ImagenFondo{
     overflow: hidden;
     background-size: 100vw 70vw;
@@ -22,7 +23,7 @@ body{
     height: 100vh;
 }
 
-
+/* Imagen que hace la animación para agrandarse y colocarla de fondo */
 #ImagenPrincipal{
     overflow: hidden;
     background-repeat: no-repeat;
@@ -33,6 +34,7 @@ body{
     height: 100vw;
 }
 
+/* Nombre y descripcion del pais/ciudad */
 #NombreDestino{
     text-align: start;
     margin: 0vh 70vw 5vh 0vw;
@@ -54,6 +56,7 @@ body{
 }
 
 #BarraDeNavegaciondePaises{
+    overflow: hidden;
     margin: 72vh 0vw 0vh 3vw;
     height: 7vh;
     position: absolute;
@@ -67,6 +70,7 @@ body{
     border-radius: 100%;
     height: 6vh;
     width: 3vw;
+    cursor: pointer;
 }
 
 #ContenedorOpciones{
@@ -132,19 +136,28 @@ body{
         opacity: 100%;
     }
 }
+#Encabezado{
+    display: grid;
+    place-items: center;
+    margin: 100vh 0vw 0vh 0vw;
+    position: absolute;
+    border: solid blue;
+    height: 62vh;
+    width: 99vw;
+}
 
 #PanoramicaDeLugar{
     display: grid;
     place-items: center;
-   margin: 100vh 0vw 0vh 0vw;
+    margin: 0vh 0vw 0vh 0vw;
     position: absolute;
     border:  solid red;
-    width: 99vw;
-    height: 60vh;
+    width: 58vw;
+    height: 61vh;
 }
 
 #PanoramicaDeLugar Img{
-     width: 58vw;
+     width: 57.5vw;
      height: 55vh;
  }
 
