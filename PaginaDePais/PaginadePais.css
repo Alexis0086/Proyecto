@@ -82,14 +82,15 @@ body{
 .OpcionDestino{
     border-radius: 20px;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 40vw 32vw;
     width: 30vw;
-    height: 55vh;
+    height: 32vw;
 }
 
 .OpcionDestino h1{
     width: 14vw;
-    margin: 46vh 0vw 0vw 1vw;
+    margin: 28vw 0vw 0vw 1vw;
     font-size: 2vw;
     color: white;
     text-shadow: 10px 10px 9px black;
@@ -140,10 +141,8 @@ body{
     height: 60vh;
 }
 
-#Panoramica{
-    margin: 150vh 0vw 0vw 0vw;
-    z-index: 1;
-    border: solid purple;
-    width: 30vw;
-    height: 30vw;
+
+iframe{
+    height: 55vh;
+    width: 65vw;
 }
