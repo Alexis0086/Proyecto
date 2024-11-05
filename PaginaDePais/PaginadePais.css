@@ -55,6 +55,7 @@ body{
     width: 27vw;
 }
 
+/* Barra de Navegacion de paises */
 #BarraDeNavegaciondePaises{
     overflow: hidden;
     margin: 72vh 0vw 0vh 3vw;
@@ -73,6 +74,8 @@ body{
     cursor: pointer;
 }
 
+/* Div que contiene todos los cuadros de cuidades de los paises */
+
 #ContenedorOpciones{
     overflow: hidden;
     gap: 2vw;
@@ -83,6 +86,7 @@ body{
     z-index: 1;
 }
 
+/* Cada cuadro de Ciudad */
 .OpcionDestino{    
     border-radius: 20px;
     background-position: center;
@@ -101,7 +105,7 @@ body{
 }
 
 
-
+/* Animacion que se realiza cuando se clickea una ciudad y su imagen se pone de fondo */
 .AnimacionDeEntrada{
     animation-name: AnimacionDeEntrada;
     animation-duration: 0.8s;
@@ -120,6 +124,8 @@ body{
     }
 }
 
+
+/* Animacion de entrada del nombre y descripcion del pais */
 .AnimacionDeEntradaTexto{
     animation-name: AnimacionDeEntradaTexto;
     animation-duration: 0.8s;
@@ -136,6 +142,8 @@ body{
         opacity: 100%;
     }
 }
+
+/* Pirmera parte de la información especifica de cada ciudad */
 #Encabezado{
     display: grid;
     place-items: center;
