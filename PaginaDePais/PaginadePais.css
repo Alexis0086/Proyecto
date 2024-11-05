@@ -5,12 +5,12 @@
 }
 
 body{
-    overflow: hidden;
     display: flex;
 }
 
 
 #ImagenFondo{
+    overflow: hidden;
     background-size: 100vw 70vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,12 +18,13 @@ body{
     place-items: center;
     position: absolute;
     z-index: -1;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
 }
 
 
 #ImagenPrincipal{
+    overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100vw 70vw;
@@ -69,11 +70,12 @@ body{
 }
 
 #ContenedorOpciones{
+    overflow: hidden;
     gap: 2vw;
     display: flex;
     margin: 30vh 0vw 0vw 33vw;
     height: 56vh;
-    width: 105vw;
+    width: 78vw;
     z-index: 1;
 }
 
@@ -128,4 +130,12 @@ body{
         margin-left: 0vw;
         opacity: 100%;
     }
+}
+
+#PanoramicaDeLugar{
+   margin: 100vh 0vw 0vh 0vw;
+    position: absolute;
+    border:  solid red;
+    width: 99vw;
+    height: 60vh;
 }
