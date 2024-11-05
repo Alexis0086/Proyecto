@@ -139,3 +139,11 @@ body{
     width: 99vw;
     height: 60vh;
 }
+
+#Panoramica{
+    margin: 150vh 0vw 0vw 0vw;
+    z-index: 1;
+    border: solid purple;
+    width: 30vw;
+    height: 30vw;
+}

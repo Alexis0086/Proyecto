@@ -130,7 +130,8 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 //Alexis de aquí pa abajo es lo suyo
 
 function CambiarInformaciónAdicional(Ciudad){
-    console.log(Ciudad)
+    document.getElementById('Panoramica').innerHTML = Ciudad.Panoramica
+    console.log(Ciudad.Panoramica)
 }
 
 
