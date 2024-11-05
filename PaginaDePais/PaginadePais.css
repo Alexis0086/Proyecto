@@ -134,6 +134,8 @@ body{
 }
 
 #PanoramicaDeLugar{
+    display: grid;
+    place-items: center;
    margin: 100vh 0vw 0vh 0vw;
     position: absolute;
     border:  solid red;
@@ -141,13 +143,12 @@ body{
     height: 60vh;
 }
 
-#PanoramicaDeLugar IMG{
-     width: 9vw;
-     height: 6vh;
+#PanoramicaDeLugar Img{
+     width: 58vw;
+     height: 55vh;
  }
-
 
 iframe{
     height: 55vh;
-    width: 65vw;
+    width: 70vw;
 }

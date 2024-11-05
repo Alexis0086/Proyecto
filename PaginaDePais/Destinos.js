@@ -2,7 +2,7 @@ const Destinos = {
     Bélgica: {
         ImagenPais: 'url("../ImagenesDestinos/Belgica/Belgica.jpg")',
         DescripcionPais: 'Un pequeño país con un inmenso corazón europeo, donde cada ciudad revela una historia, sabores irresistibles y un arte que deslumbra',
-        ImagenPais2: '<img src="../ImagenesDestinos/Belgica/BelgicaImg.jpg" alt="">',
+        ImagenPais2: '<img src="../ImagenesDestinos/Belgica/Belgica.jpg" alt="">',
         Bandera: '../ImagenesDestinos/Belgica/BanderaBelgica.jpg',
         Amberes: {
             Nombre: 'Amberes',
@@ -64,17 +64,21 @@ const Destinos = {
         },
         
         Kanagawa:{
-            Nombre: 'Kanagawa'
+            Nombre: 'Kanagawa',
+            Imagen: 'url("../ImagenesDestinos/Tsurugizaki, Kanagawa.jpg")',
+            Descripcion: '',
         },
 
-        // Dale.viste como las puse yo. Agregue otra llave al objeto llamada "Panoramica" ponlo así ti tmb Oki, pero ahorita. Igual también debería en un rato hacer lo la parte escrita de todos nosotros, porque toca investigación. Pero no lo hagas tu diles a ellos que busquen, tu nada mas les pasas los datos que ocupas de cada lugar as.i como lo hice yo Sí, seguro ahorita lo pongo, para darles un ejemplo de como sería, porque es bastante. utiliza los objetos para acomodarlo pq de eso depende que todo se automatico y no hacer un HTML para cada pais ya vengo voy a tomar un descnaso OKi.
-
         Nara:{
-            Nombre: 'Nara'
+            Nombre: 'Nara',
+            Imagen: 'url("../ImagenesDestinos/Nara Daibustu.jpg")',
+            Descripcion: '',
         },
 
         Hiroshima:{
-            Nombre: 'Hiroshima'
-        },
+            Nombre: 'Hiroshima',
+            Imagen: 'url("../ImagenesDestinos/")',
+            Descripcion: '',
+        }
     },
 }
