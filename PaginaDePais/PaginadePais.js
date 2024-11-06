@@ -134,6 +134,7 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
 let ImagenLogo = document.createElement ('img')
+let HistoriaDestino = document.createElement ('p')
 
 function CambiarInformaciónAdicional(Ciudad){
 
@@ -143,10 +144,14 @@ DestinoNombre.id = "DestinoNombre"
 InformacionDestino.id = "InformacionDestino"
 InformacionDestino.innerText = Ciudad.DescripcionPanoramica
 
-ImagenLogo.src = '../ImagenesDestinos/Japon/'
+HistoriaDestino.id = "HistoriaDestino"
+HistoriaDestino.innerText = Ciudad.HistoriaDelDestino
+
+ImagenLogo.src = '../'
 
 document.getElementById('NombreyLogo').appendChild(DestinoNombre)
 document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
+document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
 
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
