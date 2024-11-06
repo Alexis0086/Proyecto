@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Desplegable de Países</title>
-    <link rel="stylesheet" href="CSS/Pagina principal.css">
+    <link rel="stylesheet" href="Pagina principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
@@ -22,18 +22,22 @@
 
     <!-- Lista de países (oculta por defecto) -->
     <div class="ayuda" id="yuda">
-            <a href="Pagina Belgica.html">Belgica</a>
+        <li>Bélgica</li>
+        <li>Japón</li>
+        <li>Emiratos Arabes</li>
+        <li>Noruega</li>
+            <!-- <a href="Pagina Belgica.html">Belgica</a>
             <a href="Página Japon.HTML">Japon</a>
             <a href="Pagina Belgica.html">Emiratos Arabes</a>
-            <a href="Página de Noruega.html">Noruega</a>
+            <a href="Página de Noruega.html">Noruega</a> -->
     </div>
 </header>
 <section class="home">
-    <video class="video-slide active" src="Logo/Video de WhatsApp 2024-06-22 a las 17.08.55_7bccf6dc.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 16.59.26_e08049a1.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 17.06.09_8fdc201e.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 16.56.44_26d61021 copy.mp4" autoplay muted loop></video>
-    <video class="video-slide" src="Logo/Video de WhatsApp 2024-06-22 a las 22.13.15_329a493b.mp4" autoplay muted loop></video>
+    <video class="video-slide active" src="../Logo/Video de WhatsApp 2024-06-22 a las 17.08.55_7bccf6dc.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../Logo/Video de WhatsApp 2024-06-22 a las 16.59.26_e08049a1.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../Logo/Video de WhatsApp 2024-06-22 a las 17.06.09_8fdc201e.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../Logo/Video de WhatsApp 2024-06-22 a las 16.56.44_26d61021 copy.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="../Logo/Video de WhatsApp 2024-06-22 a las 22.13.15_329a493b.mp4" autoplay muted loop></video>
     
     <div class="content active">
         <h1>Hermosos <br><span>Lugares</span></h1>
@@ -67,7 +71,7 @@
             <a href="Página Belgica.html">Read More</a>
     </div>
     <div class="media-icons">
-        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="../PaginaDePais/PaginaDePais.html"> <i class="fa-brands fa-facebook-f"></i></a>
         <a href="#"> <i class="fa-brands fa-instagram"></i></a>
         <a href="#"> <i class="fa-brands fa-twitter"></i></a>
     </div>
@@ -88,6 +92,14 @@
             } else {
                 yuda.style.display = "none";
             }
+            let Opciones = yuda.querySelectorAll('li')
+            Opciones.forEach(Opcion => {
+                Opcion.addEventListener('click', function(){
+                    let OpcionElegida = Opcion.innerText
+                    localStorage.setItem('OpcionElegida', OpcionElegida)
+                    window.location.href = '../PaginaDePais/PaginaDePais.html'
+                })
+            })
         }
 
         // Cerrar la lista si se hace clic fuera de ella

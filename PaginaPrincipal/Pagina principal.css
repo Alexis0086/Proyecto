@@ -250,7 +250,7 @@ section {
 
 /* Botón para desplegar la lista */
 .yuda-button {
-  padding: 8px 10px;
+  padding: 8px 40px;
   font-size: 16px;
   cursor: pointer;
   border: 1px solid #ccc;
@@ -264,8 +264,8 @@ section {
 .ayuda {
   display: none;
   position: absolute;
-  top: 90px;
-  right: 140px;
+  top: 60px;
+  right: 190px;
   border: 1px solid #ffffff;
   border-radius: 5px;
   width: 200px;
@@ -275,15 +275,16 @@ section {
 }
 
 /* Elementos de la lista */
-.ayuda a {
+.ayuda li{
   color: rgb(255, 255, 255);
+  list-style: none;
   padding: 12px 16px;
-  text-decoration: none;
+  list-style-type: none;
   display: block;
 }
 
 /* Efecto al pasar el ratón */
-.ayuda a:hover {
+.ayuda li:hover {
   background-color: #00000050;
 }
 #popup{
