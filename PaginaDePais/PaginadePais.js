@@ -1,4 +1,4 @@
-let OpciónElegida = 'Bélgica'
+let OpciónElegida = localStorage.getItem('OpcionElegida')
 
 // Crea las etiquetas que almacenaran el nombre del lugar y una breve descripcion
 let NombreDestino = document.createElement('h1')
@@ -30,13 +30,18 @@ Banderas.forEach(Bandera => {
         for(let Pais in Destinos){
             if(Bandera.id == `Imagen${Pais}`){
                 OpciónElegida = Pais
+                ContenedorOpciones.innerHTML = ''
+                document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
                 MostrarDestinos()
+                document.getElementById('ContenedorOpciones').classList.add('AnimacionDeEntradaContenedor')
+                setTimeout(() => {
+                    document.getElementById('ImagenFondo').classList.remove('AnimacionDeEntradaContenedor')
+                    document.getElementById('ContenedorOpciones').classList.remove('AnimacionDeEntradaContenedor')
+                }, 1000);
             }
         }
     })
 })
-
-
 
 
 /*Revisa todos los objetos hasta llegar a llaves que no sean objetos (Imagen, Nombre, Descripcion)

@@ -8,8 +8,22 @@ body{
     display: flex;
 }
 
-
 /* Div de la imagen ubicada atras */
+#Fondo{
+    background-color: black;
+    overflow: hidden;
+    background-size: 100vw 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: start;
+    position: absolute;
+    z-index: -1;
+    width: 99vw;
+    height: 100vh;
+    
+}
+
 #ImagenFondo{
     overflow: hidden;
     background-size: 100vw 70vw;
@@ -21,7 +35,10 @@ body{
     z-index: -1;
     width: 99vw;
     height: 100vh;
+    animation-name: AnimacionDeEntradaContenedor;
+    animation-duration: 1s;
 }
+
 
 /* Imagen que hace la animación para agrandarse y colocarla de fondo */
 #ImagenPrincipal{
@@ -31,7 +48,7 @@ body{
     background-size: 100vw 70vw;
     position: absolute; 
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 
 /* Nombre y descripcion del pais/ciudad */
@@ -106,10 +123,26 @@ body{
 
 
 /* Animacion que se realiza cuando se clickea una ciudad y su imagen se pone de fondo */
+.AnimacionDeEntradaContenedor{
+    animation-name: AnimacionDeEntradaContenedor;
+    animation-duration: 1s;
+}
+
+
+@keyframes AnimacionDeEntradaContenedor {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
 .AnimacionDeEntrada{
     animation-name: AnimacionDeEntrada;
     animation-duration: 0.8s;
 }
+
 
 @keyframes AnimacionDeEntrada {
     from{
@@ -154,6 +187,13 @@ body{
     width: 99vw;
 }
 
+#NombreyLogo {
+  width: 20.4vw;
+  height: 61.3vh;
+  border: solid rgb(17, 219, 255);
+  margin: 0vw 90vw 0vh 0vw;
+}
+
 #PanoramicaDeLugar{
     display: grid;
     place-items: center;
@@ -165,35 +205,57 @@ body{
 }
 
 #PanoramicaDeLugar Img{
-     width: 57.5vw;
-     height: 55vh;
- }
+    width: 57.5vw;
+    height: 55vh;
+    border-radius: 20px;
+}
 
 iframe{
     height: 55vh;
     width: 70vw;
 }
 
+#DescripcionPanoramica{
+    margin: 0vw 0vh 0vw 78.4vw;
+    height: 61.3vh;
+    position: absolute;
+    width: 20.4vw;
+    border: solid pink;
+}
+
+#InformacionDelLugar{
+    margin-top: 162vh;
+    position: absolute;
+    height: 65vh;
+    width: 99vw;
+    border: solid brown;
+  }
+
 #HistoriaDelLugar {
-    margin-top: 300ch;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
     border: solid #a6ff00fb;
     width: 58vw;
-    height: 61vh;
+    height: 64.3vh;
   }
 
-#MasInformacion {
-    margin-top: 400ch;
+#ImagenenSecundaria{
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
-    border: solid #ff00ccfb;
-    width: 58vw;
-    height: 61vh;
-  }
+    border: solid #eeff00fb;
+    width: 65vw;
+    height: 64.3vh;
+}
 
-  #NombreyLogo {
-    margin-left: 65px;
-  }
+#MasInformacion {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: solid aqua;
+    width: 8vw;
+    height: 64.3vh;
+}
+
+
