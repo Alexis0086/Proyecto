@@ -131,11 +131,28 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 
 //Alexis de aquí pa abajo es lo suyo
 
+let DestinoNombre = document.createElement('h1')
+let InformacionDestino = document.createElement('p')
+let ImagenLogo = document.createElement ('img')
+
 function CambiarInformaciónAdicional(Ciudad){
+
+    DestinoNombre.innerText = Ciudad.NombrePanoramica
+DestinoNombre.id = "DestinoNombre"
+
+InformacionDestino.id = "InformacionDestino"
+InformacionDestino.innerText = Ciudad.DescripcionPanoramica
+
+ImagenLogo.src = '../ImagenesDestinos/Japon/'
+
+document.getElementById('NombreyLogo').appendChild(DestinoNombre)
+document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
+
+    document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
+
  document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
+
     console.log(Ciudad.Panoramica)
 }
-
-
 
 
