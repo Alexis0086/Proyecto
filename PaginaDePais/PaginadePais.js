@@ -14,14 +14,18 @@ let ContenedorOpciones = document.getElementById('ContenedorOpciones')
 
 let BarraDeNavegacionDePaises = document.createElement('div')
 BarraDeNavegacionDePaises.id = 'BarraDeNavegaciondePaise'
-document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises)    
+document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises) 
 
-for(let Pais in Destinos){
-    let BanderaPais = document.createElement('img')
-    BanderaPais.src = Destinos[Pais].Bandera
-    BanderaPais.id = `Imagen${Pais}`
-    document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais)
-    
+try {
+    for(let Pais in Destinos){
+        let BanderaPais = document.createElement('img')
+        BanderaPais.src = Destinos[Pais].Bandera
+        BanderaPais.id = `Imagen${Pais}`
+        document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais) 
+    }
+} catch (error) {
+    alert('¡Lo sentimos! A ocurrido un error en al cambiar de pais. Regresarás a la página principal')
+    window.location.href = '../PaginaPrincipal/Pagina principal.html'
 }
 
 let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelectorAll('img')
@@ -139,15 +143,15 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
 let HistoriaDestino = document.createElement ('p')
-let ImagenLogo = document.createElement ('img')
+let ImagenRestaurante = document.createElement ('img')
 let MasInfo = document.createElement ('p')
 
 
 function CambiarInformaciónAdicional(Ciudad){
     
-    document.getElementById('Restaurante').style.backgroundImage = ''
-    document.getElementById('Hoteles').style.backgroundImage = ''
-    document.getElementById('Atraccioes').style.backgroundImage = ''
+    // document.getElementById('Restaurante').style.backgroundImage = ''
+    // document.getElementById('Hoteles').style.backgroundImage = ''
+    // document.getElementById('Atraccioes').style.backgroundImage = ''
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
 DestinoNombre.id = "DestinoNombre"
@@ -158,17 +162,18 @@ InformacionDestino.innerText = Ciudad.DescripcionPanoramica
 HistoriaDestino.id = "HistoriaDestino"
 HistoriaDestino.innerText = Ciudad.HistoriaDelDestino
 
-ImagenLogo.src = '../'
+MasInfo.id = "MasInfo"
+MasInfo.innerText = Ciudad.MasInfo
 
-document.getElementById('NombreyLogo').appendChild(DestinoNombre)
-document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
-document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
-document.getElementById('MasInformacion').appendChild(MasInfo)
-document.getElementById('')
+    document.getElementById('NombreyLogo').appendChild(DestinoNombre)
+    document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
+    document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
+    document.getElementById('MasInformacion').appendChild(MasInfo)
+    document.getElementById('')
 
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
- document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
+    document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
     console.log(Ciudad.Panoramica)
 }
