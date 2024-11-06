@@ -24,28 +24,33 @@ try {
         document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais) 
     }
 } catch (error) {
-    alert('¡Lo sentimos! A ocurrido un error en al cambiar de pais. Regresarás a la página principal')
+    alert('¡Lo sentimos! A ocurrido un error')
     window.location.href = '../PaginaPrincipal/Pagina principal.html'
 }
 
-let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelectorAll('img')
-Banderas.forEach(Bandera => {
-    Bandera.addEventListener('click', function(){
-        for(let Pais in Destinos){
-            if(Bandera.id == `Imagen${Pais}`){
-                OpciónElegida = Pais
-                ContenedorOpciones.innerHTML = ''
-                document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
-                MostrarDestinos()
-                document.getElementById('ContenedorOpciones').classList.add('AnimacionDeEntradaContenedor')
-                setTimeout(() => {
-                    document.getElementById('ImagenFondo').classList.remove('AnimacionDeEntradaContenedor')
-                    document.getElementById('ContenedorOpciones').classList.remove('AnimacionDeEntradaContenedor')
-                }, 1000);
+try {
+    let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelectorAll('img')
+    Banderas.forEach(Bandera => {
+        Bandera.addEventListener('click', function(){
+            for(let Pais in Destinos){
+                if(Bandera.id == `Imagen${Pais}`){
+                    OpciónElegida = Pais
+                    ContenedorOpciones.innerHTML = ''
+                    document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
+                    MostrarDestinos()
+                    document.getElementById('ContenedorOpciones').classList.add('AnimacionDeEntradaContenedor')
+                    setTimeout(() => {
+                        document.getElementById('ImagenFondo').classList.remove('AnimacionDeEntradaContenedor')
+                        document.getElementById('ContenedorOpciones').classList.remove('AnimacionDeEntradaContenedor')
+                    }, 1000);
+                }
             }
-        }
+        })
     })
-})
+} catch (error) {
+    alert('¡Lo sentimos! No se ha podido cambiar de pais. Regresaras a la página principal')
+    window.location.href = '../PaginaPrincipal/Pagina principal.html'
+}
 
 
 /*Revisa todos los objetos hasta llegar a llaves que no sean objetos (Imagen, Nombre, Descripcion)
@@ -53,33 +58,39 @@ y crea las etiquetas que mostraran las opciones de destino por pais*/
 
 let Ciudades = []
 let RecorrerDestinos = (Objeto) => {
-    for(let Pais in Objeto){
-        if(typeof Objeto[Pais] == 'object'){
-            RecorrerDestinos(Objeto[Pais])
-        }else{
-            if(!Ciudades.includes(Objeto) && !Object.keys(Objeto).includes('ImagenPais')){
-                ContenedorOpciones.innerHTML = ''
-                Ciudades.push(Objeto)
-                Ciudades.forEach(Ciudad => {
-                    let opcionDiv = document.createElement('div')
-                    opcionDiv.style.backgroundImage = `${Ciudad.Imagen}`
-                    opcionDiv.classList = 'OpcionDestino'
-                    let NombreCiudad = document.createElement('h1')
-                    NombreCiudad.innerText = Ciudad.Nombre
-                    opcionDiv.appendChild(NombreCiudad)
-                    ContenedorOpciones.appendChild(opcionDiv)
-                    
-                    let opciones = ContenedorOpciones.querySelectorAll('div')
-                    opciones.forEach(opcion => {
-                        opcion.addEventListener('click', function(){
-                            ImgPrincipalyRemover(Ciudades, opcion)
+        try {
+
+        for(let Pais in Objeto){
+            if(typeof Objeto[Pais] == 'object'){
+                RecorrerDestinos(Objeto[Pais])
+            }else{
+                if(!Ciudades.includes(Objeto) && !Object.keys(Objeto).includes('ImagenPais')){
+                    ContenedorOpciones.innerHTML = ''
+                    Ciudades.push(Objeto)
+                    Ciudades.forEach(Ciudad => {
+                        let opcionDiv = document.createElement('div')
+                        opcionDiv.style.backgroundImage = `${Ciudad.Imagen}`
+                        opcionDiv.classList = 'OpcionDestino'
+                        let NombreCiudad = document.createElement('h1')
+                        NombreCiudad.innerText = Ciudad.Nombre
+                        opcionDiv.appendChild(NombreCiudad)
+                        ContenedorOpciones.appendChild(opcionDiv)
+                        
+                        let opciones = ContenedorOpciones.querySelectorAll('div')
+                        opciones.forEach(opcion => {
+                            opcion.addEventListener('click', function(){
+                                ImgPrincipalyRemover(Ciudades, opcion)
+                            })
                         })
                     })
-                })
+                }
             }
-        }
-    } 
-}
+        } 
+    }
+    
+ catch (error) {
+    ContenedorOpciones.innerText = 'No se pudo cargar la cinta de ciudades. Visita otros paises😣'
+}}
 
 
 // Activa la función 'Recorrer Destinos' cuando el usuario elige un pais, para mostrar los destinos con respecto a ese pais
@@ -154,25 +165,23 @@ function CambiarInformaciónAdicional(Ciudad){
     // document.getElementById('Atraccioes').style.backgroundImage = ''
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
-DestinoNombre.id = "DestinoNombre"
+    DestinoNombre.id = "DestinoNombre"
 
-InformacionDestino.id = "InformacionDestino"
-InformacionDestino.innerText = Ciudad.DescripcionPanoramica
+    InformacionDestino.id = "InformacionDestino"
+    InformacionDestino.innerText = Ciudad.DescripcionPanoramica
 
-HistoriaDestino.id = "HistoriaDestino"
-HistoriaDestino.innerText = Ciudad.HistoriaDelDestino
+    HistoriaDestino.id = "HistoriaDestino"
+    HistoriaDestino.innerText = Ciudad.HistoriaDelDestino
 
-MasInfo.id = "MasInfo"
-MasInfo.innerText = Ciudad.MasInfo
+    MasInfo.id = "MasInfo"
+    MasInfo.innerText = Ciudad.MasInfo
 
     document.getElementById('NombreyLogo').appendChild(DestinoNombre)
     document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
     document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
     document.getElementById('MasInformacion').appendChild(MasInfo)
     document.getElementById('')
-
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
-
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
     console.log(Ciudad.Panoramica)
