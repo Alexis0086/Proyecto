@@ -53,36 +53,48 @@ const Destinos = {
             Nombre: 'Tokio',
             Imagen: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             Descripcion: 'Tokio es una combinación de la tradición y la modernidad. La ciudad es conocida por su gastronomía, festivales, artes y entretenimiento, que atraen a turistas de todo el mundo.',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/l7JUwqngcV"></iframe>',
+
         },
 
         Kioto: {
             Nombre: 'Kioto',
             Imagen: 'url("../ImagenesDestinos/Japon/Kioto Kiyumisu (no 360).jpg")',
             Descripcion: 'Kioto se encuentra rodeada de una rica belleza natural, y es una ciudad con un repertorio único que muestra una cultura de gran atractivo',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/HkAHo1Uccs"></iframe>',
+
         },
          
         Osaka: {
             Nombre: 'Osaka',
             Imagen: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
             Descripcion: 'Luces, bullicio y diversión: Osaka es un lugar de diversión y entretenimiento con pocas pretensiones.',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/vdDGTRf6RD"></iframe>',
+
         },
         
         Kanagawa:{
             Nombre: 'Kanagawa',
             Imagen: 'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")',
             Descripcion: '',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/OuptvKRKqO"></iframe>',
+
         },
 
         Nara: {
             Nombre: 'Nara',
             Imagen: 'url("../ImagenesDestinos/Japon/Nara Daibustu.jpg")',
             Descripcion: '',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/p3IZgezzCt"></iframe>',
+            
         },
 
         Hiroshima:{
             Nombre: 'Hiroshima',
             Imagen: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
             Descripcion: '',
+            Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/6Lq5Gc7RAn"></iframe>',
+
         }
     },
 }
