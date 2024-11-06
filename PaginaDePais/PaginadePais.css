@@ -173,3 +173,27 @@ iframe{
     height: 55vh;
     width: 70vw;
 }
+
+#HistoriaDelLugar {
+    margin-top: 300ch;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: solid #a6ff00fb;
+    width: 58vw;
+    height: 61vh;
+  }
+
+#MasInformacion {
+    margin-top: 400ch;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: solid #ff00ccfb;
+    width: 58vw;
+    height: 61vh;
+  }
+
+  #NombreyLogo {
+    margin-left: 65px;
+  }

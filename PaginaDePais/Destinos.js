@@ -12,6 +12,8 @@ const Destinos = {
             NombrePanoramica: 'Grand Place',
             DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkhfwjhwk',
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
+            MasInfo: 'sudgeeuwdjoiwgedyued',
+            
         },
         Dinant: {
             Nombre: 'Dinant',

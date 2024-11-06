@@ -140,9 +140,9 @@ let MasInfo = document.createElement ('p')
 
 function CambiarInformaciónAdicional(Ciudad){
     
-    // document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),`
-    // document.getElementById('Hoteles').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), `
-    // document.getElementById('Atraccioes').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), `
+    // document.getElementById('Restaurante').style.backgroundImage = ''
+    // document.getElementById('Hoteles').style.backgroundImage = ''
+    // document.getElementById('Atraccioes').style.backgroundImage = ''
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
 DestinoNombre.id = "DestinoNombre"
@@ -158,6 +158,7 @@ ImagenLogo.src = '../'
 document.getElementById('NombreyLogo').appendChild(DestinoNombre)
 document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
 document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
+document.getElementById('MasInformacion').appendChild(MasInfo)
 
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
