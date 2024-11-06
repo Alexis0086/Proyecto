@@ -94,20 +94,26 @@ let RecorrerDestinos = (Objeto) => {
 
 // Activa la función 'Recorrer Destinos' cuando el usuario elige un pais, para mostrar los destinos con respecto a ese pais
 function MostrarDestinos(){
-    for(let Pais in Destinos){
-        if(Pais == OpciónElegida){
-            ContenedorOpciones.innerHTML = ''
-            Ciudades = []
-            document.getElementById('ImagenPrincipal').style. backgroundImage = ''
-            document.getElementById('ImagenFondo').style. backgroundImage = ''
-            RecorrerDestinos(Destinos[Pais])
-            document.getElementById('ImagenPrincipal').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
-            document.getElementById('ImagenFondo').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
-            NombreDestino.innerText = Pais
-            DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
-            document.getElementById('PanoramicaDeLugar').innerHTML = Destinos[Pais].ImagenPais2
-            // Aqui se pone la informacion de caso base del Pais(cuando aun no se ha elegido una ciudad)
+    try {
+        
+        for(let Pais in Destinos){
+            if(Pais == OpciónElegida){
+                ContenedorOpciones.innerHTML = ''
+                Ciudades = []
+                document.getElementById('ImagenPrincipal').style. backgroundImage = ''
+                document.getElementById('ImagenFondo').style. backgroundImage = ''
+                RecorrerDestinos(Destinos[Pais])
+                document.getElementById('ImagenPrincipal').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
+                document.getElementById('ImagenFondo').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
+                NombreDestino.innerText = Pais
+                DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
+                document.getElementById('PanoramicaDeLugar').innerHTML = Destinos[Pais].ImagenPais2
+                // Aqui se pone la informacion de caso base del Pais(cuando aun no se ha elegido una ciudad)
+            }
         }
+    } catch (error) {
+        alert('No se detectó ninguna ciudad. Elige otro pais para mostrartelo🌐')
+        window.location.href = '../PaginaPrincipal/Pagina principal.html'
     }
 }
 MostrarDestinos()
@@ -159,9 +165,10 @@ let MasInfo = document.createElement ('p')
 
 function CambiarInformaciónAdicional(Ciudad){
     
-    document.getElementById('Restaurante').style.backgroundImage = ''
-    document.getElementById('Hoteles').style.backgroundImage = ''
-    document.getElementById('Atraccioes').style.backgroundImage = ''
+    // document.getElementById('Restaurante').style.backgroundImage = ''
+    // document.getElementById('Hoteles').style.backgroundImage = ''
+    // document.getElementById('Atraccioes').style.backgroundImage = ''
+    document.getElementById('Restaurante').style.backgroundImage = Ciudad.ImagenRestaurante
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
     DestinoNombre.id = "DestinoNombre"
@@ -179,7 +186,6 @@ function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
     document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
     document.getElementById('MasInformacion').appendChild(MasInfo)
-    document.getElementById('')
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 

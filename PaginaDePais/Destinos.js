@@ -13,6 +13,7 @@ const Destinos = {
             DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkhfwjhwk',
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
             MasInfo: 'sudgeeuwdjoiwgedyued',
+            ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             
         },
         Dinant: {

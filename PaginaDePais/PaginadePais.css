@@ -256,6 +256,16 @@ iframe{
     border: solid aqua;
     width: 8vw;
     height: 64.3vh;
+    right: 100rem;
 }
 
 
+#Restaurante {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    border: solid darkmagenta;
+    width: 8vw;
+    height: 64.3vh;
+    bottom: 150rem;
+}
