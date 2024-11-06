@@ -137,9 +137,12 @@ let HistoriaDestino = document.createElement ('p')
 let ImagenLogo = document.createElement ('img')
 let MasInfo = document.createElement ('p')
 
-document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudades.style.backgroundImage}`
 
 function CambiarInformaciónAdicional(Ciudad){
+    
+    // document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),`
+    // document.getElementById('Hoteles').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), `
+    // document.getElementById('Atraccioes').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), `
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
 DestinoNombre.id = "DestinoNombre"
