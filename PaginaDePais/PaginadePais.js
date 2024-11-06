@@ -133,8 +133,11 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 
 let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
-let ImagenLogo = document.createElement ('img')
 let HistoriaDestino = document.createElement ('p')
+let ImagenLogo = document.createElement ('img')
+let MasInfo = document.createElement ('p')
+
+document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudades.style.backgroundImage}`
 
 function CambiarInformaciónAdicional(Ciudad){
 
