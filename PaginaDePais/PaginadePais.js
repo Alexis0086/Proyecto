@@ -59,7 +59,6 @@ y crea las etiquetas que mostraran las opciones de destino por pais*/
 let Ciudades = []
 let RecorrerDestinos = (Objeto) => {
         try {
-
         for(let Pais in Objeto){
             if(typeof Objeto[Pais] == 'object'){
                 RecorrerDestinos(Objeto[Pais])
@@ -89,7 +88,7 @@ let RecorrerDestinos = (Objeto) => {
     }
     
  catch (error) {
-    ContenedorOpciones.innerText = 'No se pudo cargar la cinta de ciudades. Visita otros paises😣'
+    ContenedorOpciones.innerText = 'No se pudo cargar la cinta de ciudades😣. Visita otros paises🌐'
 }}
 
 
@@ -160,9 +159,9 @@ let MasInfo = document.createElement ('p')
 
 function CambiarInformaciónAdicional(Ciudad){
     
-    // document.getElementById('Restaurante').style.backgroundImage = ''
-    // document.getElementById('Hoteles').style.backgroundImage = ''
-    // document.getElementById('Atraccioes').style.backgroundImage = ''
+    document.getElementById('Restaurante').style.backgroundImage = ''
+    document.getElementById('Hoteles').style.backgroundImage = ''
+    document.getElementById('Atraccioes').style.backgroundImage = ''
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
     DestinoNombre.id = "DestinoNombre"
@@ -186,5 +185,3 @@ function CambiarInformaciónAdicional(Ciudad){
 
     console.log(Ciudad.Panoramica)
 }
-
-
