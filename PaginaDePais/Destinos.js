@@ -10,7 +10,7 @@ const Destinos = {
             Descripcion: 'Amberes, la capital mundial de los diamantes, deslumbra con su impresionante puerto, su catedral gótica y su vibrante escena artística.',
             Panoramica: '<iframe allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:18px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/LWoJBXN6Xj"></iframe>',
             NombrePanoramica: 'Grand Place',
-            DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkhfwjhwk',
+            DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkfe',
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
             MasInfo: 'sudgeeuwdjoiwgedyued',
             ImagenSec: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',

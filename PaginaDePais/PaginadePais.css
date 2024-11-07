@@ -54,7 +54,7 @@ body{
 /* Nombre y descripcion del pais/ciudad */
 #NombreDestino{
     text-align: start;
-    margin: 0vh 70vw 5vh 0vw;
+    margin: 0vh 70vw 13vh 0vw;
     z-index: 1;
     position: absolute;
     color: rgba(255, 255, 255, 0.867);
@@ -64,7 +64,7 @@ body{
 
 #DescripcionDestino{
     text-align: start;
-    margin: 23vh 65vw 0vh 0vw;
+    margin: 17vh 65vw 0vh 0vw;
     z-index: 1;
     position: absolute;
     color: rgba(255, 255, 255, 0.841);
@@ -75,7 +75,7 @@ body{
 /* Barra de Navegacion de paises */
 #BarraDeNavegaciondePaises{
     overflow: hidden;
-    margin: 72vh 0vw 0vh 3vw;
+    margin: 7vh 0vw 0vh 3vw;
     height: 7vh;
     position: absolute;
     display: flex;
@@ -237,6 +237,8 @@ iframe{
     height: 65vh;
     width: 99vw;
     border: solid brown;
+    background-color: black;
+    color: aqua;
   }
 
 #HistoriaDelLugar {
@@ -264,36 +266,47 @@ iframe{
     border: solid aqua;
     width: 8vw;
     height: 64.3vh;
-    right: 100rem;
+    left: 50rem;
 }
 
+#LugaresAVisitar{
+    background-color: black;
+    display: flex;
+    margin-top: 227vh;
+    position: absolute;
+    height: 65vh;
+    width: 99vw
+}
 
 #Restaurante {
+    flex: 1;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
     border: solid darkmagenta;
-    width: 8vw;
+    width: 33vw;
     height: 64.3vh;
-    margin: 0vw 0vh 0vw 150vw;
+    margin: 0vw vw 0vw 0vw;
 }
 
 #Hoteles {
+    flex: 1;
 position: absolute;
 font-size: xx-large;
 font-weight: bolder;
 border: solid fuchsia;
-width: 8vw;
+width: 33vw;
 height: 64.3vh;
-top: 140rem;
+margin: 0vw 0vw 0vw 33vw;
 }
 
 #Atracciones {
+    flex: 1;
 position: absolute;
 font-size: xx-large;
 font-weight: bolder;
 border: solid green;
-width: 8vw;
+width: 33vw;
 height: 64.3vh;
-top: 110rem;
+margin: 0vw 0vh 0vw 66vw;
 }
