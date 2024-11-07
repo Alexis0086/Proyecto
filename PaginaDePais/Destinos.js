@@ -8,7 +8,7 @@ const Destinos = {
             Nombre: 'Amberes',
             Imagen: 'url("../ImagenesDestinos/Belgica/Amberes.jpg")',
             Descripcion: 'Amberes, la capital mundial de los diamantes, deslumbra con su impresionante puerto, su catedral gótica y su vibrante escena artística.',
-            Panoramica: '<iframe allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:18px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/LWoJBXN6Xj"></iframe>',
+            Panoramica: '<iframe allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" src="https://panoraven.com/es/embed/LWoJBXN6Xj"></iframe>',
             NombrePanoramica: 'Grand Place',
             DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkfe',
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
@@ -66,10 +66,12 @@ const Destinos = {
             HistoriaDelDestino: 'Tokyo, antes Edo, se convirtió en la capital de Japón en 1868 y creció hasta ser hoy una de las ciudades más grandes y modernas del mundo.',
             MasInfo: 'Cultura única, como los santuarios. Gastronomía, como el sushi. Compras y tecnología, lo último en tecnología y moda.',
             ImagenSec: 'url("../ImagenesDestinos/Japon/Japon.gif")',
-            ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
-            ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
-            ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")'
-
+            ImagenRestaurante: 'url("../ImagenesDestinos/Japon/RestauranteTokyo.jpeg")',
+            ImagenHotel: 'url("../ImagenesDestinos/Japon/HotelTokyo.jpg")',
+            ImagenAtraccion:'url("../ImagenesDestinos/Japon/TokyoAtraccion.jpg")',
+            RestaurantesInfo: 'Restaurante Samurai, Shinjuku, Zauo, Vampire Café, Ginza, Alicia en el libro de Fantasía, Shinjuku',
+            HotelesInfo: 'El Mitsui Garden Hotel Roppongi Tokyo Premier, Hotel New Otani Tokyo Garden Tower, Odaiba Hilton Tokyo, Park Hyatt Tokio, Imperial Hotel Tokio',
+            AtraccionesInfo: 'Templo Senso-Ji, Torre de Tokio, Parque Ueno, Skytree Tokio, Santuario Meiji (Meiji Jingu)',
         },
 
         Kioto: {
