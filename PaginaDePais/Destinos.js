@@ -115,9 +115,9 @@ const Destinos = {
         }
     },
     EmiratosArabes: {
-        ImagenPais: 'url("../ImagenesDestinos/EmiratosArabes/EmiratosArabes.jpg")',
+        ImagenPais: 'url("../ImagenesDestinos\Emiratos Araes\Imagen 1.jpg)',
         DescripcionPais: 'Un país de contrastes deslumbrantes, donde la tradición se encuentra con la modernidad en un entorno de lujo y hospitalidad.',
-        ImagenPais2: '<img src="../ImagenesDestinos/EmiratosArabes/EmiratosArabesImg.jpg" alt="">',
+        ImagenPais2: '<img src="../ImagenesDestinos\Emiratos Araes\Imagen pais 2.jpg" alt="">',
         Bandera: '../ImagenesDestinos\Emiratos Araes\Logo.jpg',
         Dubai: {
             Nombre: 'Dubai',
