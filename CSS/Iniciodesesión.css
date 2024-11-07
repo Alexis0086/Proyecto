@@ -1,7 +1,67 @@
 /* Importar la fuente Quicksand de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+.formulario {
+    max-height: 400px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+    padding-right: 15px; /* Espacio para la barra de desplazamiento */
+}
 
-/* Reseteo básico de estilos */
+/* Flecha para volver al inicio*/
+.boton-regreso {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    z-index: 3000;
+}
+
+.flecha-izquierda {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-left: 4px solid #3498db;
+    border-bottom: 4px solid #3498db;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.boton-regreso:hover .flecha-izquierda {
+    border-color: #2980b9;
+    transform: rotate(45deg) scale(1.2);
+}
+
+/* Estilo para la barra de desplazamiento */
+.formulario::-webkit-scrollbar {
+    width: 8px;
+}
+
+.formulario::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.formulario::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 10px;
+}
+
+.formulario::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+
+.formulario {
+    scrollbar-width: thin;
+    scrollbar-color: #3498db rgba(255, 255, 255, 0.1);
+}
+
+/* Unnnnn Ajuste específico para el formulario de registro alv*/
+#registerForm {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Reseteoooooo de estilos mrd */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +69,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Estilos del body */
+/* Estilos del body bot */
 body {
     display: flex;
     justify-content: center;
@@ -69,7 +129,7 @@ section span:hover {
 }
 
 /* Estilos del contenedor de inicio de sesión */
-section .signin {
+section .iniciarSesion {
     position: absolute;
     width: 400px;
     background: #2a2a2a;  
@@ -83,7 +143,7 @@ section .signin {
 }
 
 /* Estilos del contenido dentro del contenedor de inicio de sesión */
-section .signin .content {
+section .iniciarSesion .contenido {
     position: relative;
     width: 100%;
     display: flex;
@@ -94,7 +154,7 @@ section .signin .content {
 }
 
 /* Estilos del título de la página */
-.site-title {
+.tituloSitio {
     font-size: 2.5em;
     color: #3498db;
     text-transform: uppercase;
@@ -102,14 +162,14 @@ section .signin .content {
 }
 
 /* Estilos del título del formulario */
-section .signin .content h2 {
+section .iniciarSesion .contenido h2 {
     font-size: 2em;
     color: #9a9a9a;
     text-transform: uppercase;
 }
 
 /* Estilos del formulario */
-section .signin .content .form {
+section .iniciarSesion .contenido .formulario {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -118,12 +178,12 @@ section .signin .content .form {
 }
 
 /* Estilos de las cajas de entrada */
-section .signin .content .form .inputBox {
+section .iniciarSesion .contenido .formulario .cajaEntrada {
     position: relative;
     width: 100%;
 }
 
-section .signin .content .form .inputBox input {
+section .iniciarSesion .contenido .formulario .cajaEntrada input {
     position: relative;
     width: 100%;
     background: #3a3a3a;
@@ -138,7 +198,7 @@ section .signin .content .form .inputBox input {
 }
 
 /* Estilos de las etiquetas de los campos de entrada */
-section .signin .content .form .inputBox i {
+section .iniciarSesion .contenido .formulario .cajaEntrada i {
     position: absolute;
     left: 0;
     padding: 15px 10px;
@@ -149,39 +209,39 @@ section .signin .content .form .inputBox i {
 }
 
 /* Estilos de las etiquetas cuando el campo está en foco o tiene contenido */
-.signin .content .form .inputBox input:focus ~ i,
-.signin .content .form .inputBox input:valid ~ i,
-.signin .content .form .inputBox.focus i {
+.iniciarSesion .contenido .formulario .cajaEntrada input:focus ~ i,
+.iniciarSesion .contenido .formulario .cajaEntrada input:valid ~ i,
+.iniciarSesion .contenido .formulario .cajaEntrada.focus i {
     transform: translateY(-7.5px);
     font-size: 0.8em;
     color: #3498db;
 }
 
 /* Estilos de los enlaces (olvidé contraseña y registro) */
-.signin .content .form .links {
+.iniciarSesion .contenido .formulario .enlaces {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.signin .content .form .links a {
+.iniciarSesion .contenido .formulario .enlaces a {
     color: #9a9a9a;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.signin .content .form .links a:hover {
+.iniciarSesion .contenido .formulario .enlaces a:hover {
     color: #3498db;
 }
 
-.signin .content .form .links a:nth-child(2) {
+.iniciarSesion .contenido .formulario .enlaces a:nth-child(2) {
     color: #3498db;
     font-weight: 600;
 }
 
 /* Estilos del botón de envío */
-.signin .content .form .inputBox input[type="submit"] {
+.iniciarSesion .contenido .formulario .cajaEntrada input[type="submit"] {
     padding: 10px;
     background: #3498db;
     color: #fff;
@@ -192,7 +252,7 @@ section .signin .content .form .inputBox i {
     transition: 0.5s;
 }
 
-.signin .content .form .inputBox input[type="submit"]:hover {
+.iniciarSesion .contenido .formulario .cajaEntrada input[type="submit"]:hover {
     background: #2980b9;
 }
 
@@ -200,7 +260,7 @@ input[type="submit"]:active {
     opacity: 0.6;
 }
 
-/* Hacer el diseño respectivo */
+/* diseño respectivooooooo vg*/
 @media (max-width: 900px) {
     section span {
         width: calc(10vw - 2px);
@@ -226,16 +286,837 @@ input[type="submit"]:active {
 }
 
 /* Aplicar animación de aparición gradual al formulario */
-.form {
+.formulario {
     animation: fadeIn 0.5s ease-out;
 }
 
 /* Aplicar animación de deslizamiento a las cajas de entrada */
-.inputBox {
+.cajaEntrada {
     animation: slideIn 0.5s ease-out;
 }
 
 /* Efecto de brillo al enfocar los campos de entrada */
-.inputBox input:focus {
+.cajaEntrada input:focus {
     box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
+
+
+/* Estilos para la ventana modal de cookies */
+.modalCookies {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 700px;
+    background: rgba(42, 42, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 2000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: deslizarArriba 0.8s ease-out forwards;
+}
+
+.contenidoCookies {
+    text-align: center;
+    color: #fff;
+}
+
+.iconoCookies {
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: rotar 2s infinite linear;
+}
+
+.modalCookies h2 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.modalCookies p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #9a9a9a;
+}
+
+.botoneraCookies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botonCookie {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+}
+
+#aceptarCookies {
+    background: #3498db;
+    color: white;
+}
+
+#rechazarCookies {
+    background: #2a2a2a;
+    color: #9a9a9a;
+    border: 1px solid #9a9a9a;
+}
+
+.botonTerminos {
+    background: transparent;
+    color: #3498db;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Estilos para la ventana modal de términos y condiciones jj*/
+.modalTerminos {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2001;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoTerminos {
+    background: #2a2a2a;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    border-radius: 15px;
+    padding: 30px;
+    color: #fff;
+    position: relative;
+    overflow-y: auto;
+    animation: aparecer 0.3s ease-out;
+}
+
+.textoTerminos {
+    margin: 20px 0;
+}
+
+.textoTerminos h3 {
+    color: #3498db;
+    margin: 15px 0 10px;
+}
+
+.textoTerminos p {
+    color: #9a9a9a;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.botonCerrar {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Estilos para las notificaciones d mrd, (no aparecian) */
+.notificacion {
+    position: fixed;
+    top: -100px;
+    right: 20px;
+    background: rgba(42, 42, 42, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: white;
+    z-index: 2002;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: top 0.5s ease;
+}
+
+.contenidoNotificacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconoNotificacion {
+    font-size: 1.5em;
+}
+
+/* Animaciones */
+@keyframes deslizarArriba {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 20px;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .modalCookies {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .contenidoTerminos {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .notificacion {
+        left: 10px;
+        right: 10px;
+    }
+}
+
+
+
+/* Estilos para el campo de nacionalidad */
+.cajaEntrada .lista-nacionalidades {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #3a3a3a;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.lista-nacionalidades div {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lista-nacionalidades div:hover {
+    background: #3498db;
+}
+
+/* Estilos para el contenedor del teléfono */
+.telefono-container {
+    display: flex;
+    gap: 10px;
+}
+
+.codigo-pais {
+    width: 70px !important;
+    background: #3a3a3a !important;
+    color: #fff !important;
+    text-align: center;
+}
+
+/* Estilos mejorado (notificacios misnalgas) */
+.notificacion {
+    min-width: 300px;
+    transform: translateX(150%);
+    animation: slideInNotification 0.5s forwards;
+    background: linear-gradient(45deg, #2a2a2a, #3498db);
+    border-left: 5px solid #3498db;
+}
+
+.notificacion.error {
+    background: linear-gradient(45deg, #2a2a2a, #ec1a03);
+    border-left: 15px solid #ff1e05;
+}
+
+.notificacion.success {
+    background: linear-gradient(45deg, #2a2a2a, #2403de);
+    border-left: 15px solid #280ce3;
+}
+
+@keyframes slideInNotification {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shakeNotification {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/*  Autenticacion vg */
+
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #2ecc71;
+    --color-error: #e74c3c;
+    --fondo-oscuro: #2c3e50;
+    --texto-claro: #ecf0f1;
+    --sombra-suave: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-autenticacion {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.tarjeta-autenticacion {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+}
+
+.titulo-geo {
+    color: var(--texto-claro);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    color: var(--texto-claro);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.grupo-entrada {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.entrada-texto {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--texto-claro);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.entrada-texto:focus {
+    border-color: var(--color-primario);
+    outline: none;
+}
+
+.boton-principal {
+    width: 100%;
+    padding: 12px;
+    background: var(--color-primario);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.boton-principal:hover {
+    background: #2980b9;
+}
+
+.enlaces-adicionales {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.enlace-secundario {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.enlace-secundario:hover {
+    color: var(--color-primario);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.entrada-verificacion {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.digito {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Notificaciones específicas para recuperación */
+.notificacion-recuperacion {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    transform: translateX(120%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.notificacion-recuperacion.mostrar-recuperacion {
+    transform: translateX(0);
+}
+
+.notificacion-recuperacion.exito {
+    background: var(--color-secundario);
+}
+
+.notificacion-recuperacion.error {
+    background: var(--color-error);
+}
+
+.contenedor-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    z-index: 3000;
+}
+
+.checkbox-recordar {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: var(--color-primario);
+    z-index: 3000;
+}
+
+.etiqueta-recordar {
+    color: var(--texto-claro);
+    font-size: 0.9rem;
+    cursor: pointer;
+    z-index: 3000;
+}
+.logos-redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px; 
+    margin: 20px 0;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: white;
+    padding: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-link:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Estilo específico para el logo de X que tiene fondo negro */
+.logo-link:last-child {
+    background-color: black;
+}
+
+/* Estilos para el código de verificación q finooo*/
+.entrada-verificacion {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.digito {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #3a3a3a;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.digito:focus {
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/* Animación para el cambio de formularios */
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formulario {
+    animation: fadeInForm 0.5s ease-out;
+}
+
+/* AVION */
+.contenedor-animacion {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    pointer-events: none;
+    z-index: 3000;
+    overflow: visible;
+}
+
+.planeta {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotacionPlaneta 24s linear infinite;
+}
+
+.nave-espacial {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    animation: orbitaNave 12s linear infinite;
+}
+
+@keyframes rotacionPlaneta {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes orbitaNave {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(60px) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(90deg) translateX(60px) rotate(-90deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) translateX(60px) rotate(-180deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(270deg) translateX(60px) rotate(-270deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(60px) rotate(-360deg);
+    }
+}
+
+/* Añadir efecto de hover */
+.contenedor-animacion:hover .nave-espacial {
+    animation-duration: 8s; /* La nave acelera al hacer hover */
+}
+
+/* Asegurar que la animación sea suave */
+.planeta, .nave-espacial {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+}
+
+/* Ajuste extrassss tsss */
+@media (max-width: 768px) {
+    .contenedor-animacion {
+        top: 10px;
+        right: 10px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .planeta {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nave-espacial {
+        width: 30px;
+        height: 30px;
+    }
+
+    @keyframes orbitaNave {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg) translateX(45px) rotate(0deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg) translateX(45px) rotate(-360deg);
+        }
+    }
+}
+
+/* Efectos adicionales para mejorar la visualización */
+.planeta svg {
+    filter: drop-shadow(0 0 10px rgba(76, 165, 255, 0.3));
+}
+
+.nave-espacial svg {
+    filter: drop-shadow(0 0 5px rgba(255, 107, 107, 0.3));
+}
+
+/* Efecto de parpadeo suave para el resplandor del planeta CREDITOS: YT NET NINJA*/
+@keyframes resplandor {
+    0%, 100% { filter: drop-shadow(0 0 10px rgba(76, 165, 255, 0.3)); }
+    50% { filter: drop-shadow(0 0 15px rgba(76, 165, 255, 0.5)); }
+}
+
+.planeta {
+    animation: rotacionPlaneta 24s linear infinite, resplandor 4s ease-in-out infinite;
+}
+
+/* Suavizar el movimiento de la nave */
+.nave-espacial {
+    transition: transform 0.3s ease-out;
+}
+
+/* Estilos para el tema claro (por defecto) */
+body {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+}
+
+/* Estilos para el tema oscuro */
+body.tema-oscuro {
+    background-color: #333333; /* Fondo gris oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos adicionales para los elementos de la página */
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* Estilos para el botón de estrella */
+#cambiarTema {
+    position: fixed; 
+    bottom: 20px; 
+    right: 40px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: transparent; 
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Forma de estrella, CREDITOS: YT DCODE */
+    background-color: #007BFF; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    z-index: 3000; 
+    transition: transform 0.3s ease; 
+    animation: girar 5s linear infinite; 
+}
+
+/* Animación de giro */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg); /* Comienza en 0 gradoTES */
+    }
+    100% {
+        transform: rotate(360deg); /* Gira 360 gradoTES */
+    }
+}
+
+/* Efecto al pasar el mickeymouse */
+#cambiarTema:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto de pulsar */
+#cambiarTema:active {
+    transform: scale(0.9); /* Se hunde ligeramente al hacer clic */
+}
+/*Barra dde seguridad de la contaseña (que pichudo legal)*/
+.barra-seguridad {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barra-seguridad .progreso {
+    width: 0;
+    height: 100%;
+    background: #ff4444;
+    transition: all 0.3s ease;
+}
+
+.mensajes-validacion {
+    margin-top: 10px;
+    font-size: 0.85em;
+}
+
+.requisito {
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.requisito::before {
+    content: '✓';
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+.requisito.valido::before {
+    opacity: 1;
+}
+
+/* Animación suave para los cambios */
+.requisito, .progreso {
+    transition: all 0.3s ease;
+}
+
+
+/* Arreglar la mrd del espacio del telefono(MIERDA)*/
+.contenedor-telefono {
+    display: flex;
+    gap: 10px;
+    margin-top: -10px; 
+}
+
+.contenedor-codigo {
+    position: relative;
+    width: 30%;
+}
+
+.entrada-telefono {
+    position: relative;
+    width: 70%;
+}
+
+.codigo-pais,
+#numeroTelefono {
+    position: relative;
+    width: 100%;
+    background: #3a3a3a;
+    border: none;
+    outline: none;
+    padding: 25px 10px 7.5px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.contenedor-codigo i,
+.entrada-telefono i {
+    position: absolute;
+    left: 0;
+    padding: 15px 10px;
+    font-style: normal;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+/* Estilos cuando el campo tiene contenido */
+.contenedor-codigo input:focus ~ i,
+.contenedor-codigo input:valid ~ i,
+.entrada-telefono input:focus ~ i,
+.entrada-telefono input:valid ~ i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #3498db;
+}
+
+/*COMO COSTO ESA MRD DE AHÍ ARRIBA, LEGAL.*/
+/*DESPUES DE 1119 LINEAS: FIN*/
