@@ -91,7 +91,9 @@ NombrePanoramica: 'Kioto',
 RestaurantesInfo: 'Gion Kappo Sakamoto, Nishiki Warai, Menbaka Fire Ramen, Hyotei, Kyoboshi, Kichi Kichi Omurice',
             HotelesInfo: 'The Ritz-Carlton, Kyoto, Hotel Granvia Kyoto, Hoshinoya Kyoto, Kyoto Hotel Okura, Four Seasons Hotel Kyoto',
 
-            AtraccionesInfo: 'Templo Senso-Ji, Torre de Tokio, Parque Ueno, Skytree Tokio, Santuario Meiji (Meiji Jingu)',
+            AtraccionesInfo: 'Templo Kinkaku-ji (Pabellón de Oro),Santuario Fushimi Inari-taisha
+Templo Kiyomizu-dera, Bosque de Bambú de Arashiyama
+Castillo de Nijo',
 
         },
          
