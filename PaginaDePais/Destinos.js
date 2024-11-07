@@ -89,7 +89,8 @@ NombrePanoramica: 'Kioto',
             ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")',
 
 RestaurantesInfo: 'Gion Kappo Sakamoto, Nishiki Warai, Menbaka Fire Ramen, Hyotei, Kyoboshi, Kichi Kichi Omurice',
-            HotelesInfo: 'El Mitsui Garden Hotel Roppongi Tokyo Premier, Hotel New Otani Tokyo Garden Tower, Odaiba Hilton Tokyo, Park Hyatt Tokio, Imperial Hotel Tokio',
+            HotelesInfo: 'The Ritz-Carlton, Kyoto, Hotel Granvia Kyoto, Hoshinoya Kyoto, Kyoto Hotel Okura, Four Seasons Hotel Kyoto',
+
             AtraccionesInfo: 'Templo Senso-Ji, Torre de Tokio, Parque Ueno, Skytree Tokio, Santuario Meiji (Meiji Jingu)',
 
         },
