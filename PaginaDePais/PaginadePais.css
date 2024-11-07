@@ -75,7 +75,7 @@ body{
 /* Barra de Navegacion de paises */
 #BarraDeNavegaciondePaises{
     overflow: hidden;
-    margin: 7vh 0vw 0vh 3vw;
+    margin: 75vh 0vw 0vh 3vw;
     height: 7vh;
     position: absolute;
     display: flex;
@@ -232,47 +232,63 @@ iframe{
 }
 
 #InformacionDelLugar{
+    padding: 10vh 5vw;
     margin-top: 162vh;
     position: absolute;
-    height: 65vh;
+    height: 75vh;
     width: 99vw;
     border: solid brown;
     background-color: black;
-    color: aqua;
+    color: goldenrod;
   }
 
+  #InformacionDelLugar h1{
+      font-size: 2.5vw;
+      text-align: center;
+  }
+
+  #InformacionDelLugar p{
+    margin: 4vh 0vw 0vw 0vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
 #HistoriaDelLugar {
+    padding: 4vh 3vw;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
     border: solid #a6ff00fb;
-    width: 58vw;
-    height: 64.3vh;
+    width: 30vw;
+    height: 40vh;
   }
 
 #ImagenenSecundaria{
+    float: right;
     position: absolute;
     font-weight: bolder;
     border: solid #eeff00fb;
-    width: 15vw;
+    width: 28vw;
     height: 40vh;
-    margin: 0vw 78vw 0vw 0vw;
+    margin: 0vw 0vw 0vw 61vw;
 }
 
 #MasInformacion {
+    padding: 4vh 2vw;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
     border: solid aqua;
-    width: 8vw;
-    height: 64.3vh;
-    left: 50rem;
+    width: 25vw;
+    height: 40vh;
+    left: 38vw;
 }
 
 #LugaresAVisitar{
+    color: goldenrod;
     background-color: black;
     display: flex;
-    margin-top: 227vh;
+    margin-top: 237vh;
     position: absolute;
     height: 65vh;
     width: 99vw

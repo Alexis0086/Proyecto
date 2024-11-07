@@ -53,6 +53,7 @@ const Destinos = {
     },
     Japón: {
         ImagenPais: 'url("../ImagenesDestinos/Japon/Shibuya.jpg")',
+        ImagenPais2: ' <img src="../ImagenesDestinos/Japon/Japon.jpg" alt="">',
         DescripcionPais: 'Japón es un país con una rica historia y cultura que se remonta a miles de años. El país ha sido influenciado por una variedad de culturas, incluidas las de China, Corea y Occidente.',
         Bandera: '../ImagenesDestinos/Japon/Japon_bandera.png',
         Tokio: {
@@ -60,6 +61,14 @@ const Destinos = {
             Imagen: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             Descripcion: 'Tokio es una combinación de la tradición y la modernidad. La ciudad es conocida por su gastronomía, festivales, artes y entretenimiento, que atraen a turistas de todo el mundo.',
             Panoramica: '<iframe width="90%" height="500px" allowFullScreen="true" allow="accelerometer; magnetometer; gyroscope" style="display:block; margin:20px auto; border:0 none; max-width:880px;border-radius:8px; box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11);" src="https://panoraven.com/es/embed/l7JUwqngcV"></iframe>',
+            NombrePanoramica: 'Shinjuku',
+            DescripcionPanoramica: 'Es un importante centro comercial y administrativo, que alberga la mitad norte de la estación de tren más concurrida del mundo (Estación Shinjuku) así como el Edificio del Gobierno Metropolitano de Tokio, el centro administrativo de la Gobierno Metropolitano de Tokio. Y lo que se muestra en la imagen panoramica es el pase llamado "Kabuki-cho".',
+            HistoriaDelDestino: 'Tokyo, antes Edo, se convirtió en la capital de Japón en 1868 y creció hasta ser hoy una de las ciudades más grandes y modernas del mundo.',
+            MasInfo: 'Cultura única, como los santuarios. Gastronomía, como el sushi. Compras y tecnología, lo último en tecnología y moda.',
+            ImagenSec: 'url("../ImagenesDestinos/Japon/Japon.gif")',
+            ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
+            ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
+            ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")'
 
         },
 

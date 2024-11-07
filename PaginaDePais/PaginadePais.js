@@ -169,6 +169,7 @@ let MasInfo = document.createElement ('p')
 let RestaurantesInfo = document.createElement ('p')
 let HotelesInfo = document.createElement ('p')
 let AtraccionesInfo = document.createElement ('p')
+document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${OpciónElegida}?`
 
 function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Ciudad.ImagenSec}`
@@ -207,5 +208,6 @@ function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
+    document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${Ciudad.Nombre}?`
     console.log(Ciudad.Panoramica)
 }
