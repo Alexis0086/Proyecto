@@ -82,7 +82,7 @@ const Destinos = {
 NombrePanoramica: 'Kioto',
             DescripcionPanoramica: 'Kioto es una ciudad histórica en Japón, famosa por sus templos, santuarios, jardines y arquitectura tradicional. Antigua capital, destaca por su rica herencia cultural y su papel en preservar las tradiciones japonesas.',
             HistoriaDelDestino: 'Fundada en 794, Kioto fue la capital de Japón hasta 1868, destacándose como centro cultural y religioso. Se salvó de bombardeos en la Segunda Guerra Mundial, conservando su arquitectura y templos históricos',
-            MasInfo: 'sudgeeuwdjoiwgedyued',
+            MasInfo: 'Kioto ofrece templos, jardines y cultura tradicional, siendo un destino ideal para vivir la historia de Japón.',
             ImagenSec: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
             ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
