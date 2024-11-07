@@ -23,7 +23,7 @@ try {
         BanderaPais.id = `Imagen${Pais}`
         document.getElementById('BarraDeNavegaciondePaises').appendChild(BanderaPais) 
     }
-} catch (error) {
+} catch {
     alert('¡Lo sentimos! A ocurrido un error')
     window.location.href = '../PaginaPrincipal/Pagina principal.html'
 }
@@ -47,7 +47,7 @@ try {
             }
         })
     })
-} catch (error) {
+} catch {
     alert('¡Lo sentimos! No se ha podido cambiar de pais. Regresaras a la página principal')
     window.location.href = '../PaginaPrincipal/Pagina principal.html'
 }
@@ -87,8 +87,8 @@ let RecorrerDestinos = (Objeto) => {
         } 
     }
     
- catch (error) {
-    ContenedorOpciones.innerText = 'No se pudo cargar la cinta de ciudades😣. Visita otros paises🌐'
+ catch {
+    ContenedorOpciones.innerText = 'No se pudo cargar la cinta de ciudades😣, pero puedes visitar muchos otros paises🌐'
 }}
 
 
@@ -111,21 +111,23 @@ function MostrarDestinos(){
                 // Aqui se pone la informacion de caso base del Pais(cuando aun no se ha elegido una ciudad)
             }
         }
-    } catch (error) {
-        alert('No se detectó ninguna ciudad. Elige otro pais para mostrartelo🌐')
+    } catch {
+        alert('No se detectó ninguna ciudad. Elige otro pais para mostrarte más información🌐')
         window.location.href = '../PaginaPrincipal/Pagina principal.html'
     }
 }
-MostrarDestinos()
 
+MostrarDestinos()
 
 /*Se encarga de hacer la animación y cambiar los datos cuando el usuario elija una cuidad
     Además, mueve la opcion elegida al final*/
 
 function ImgPrincipalyRemover(Ciudades, opcion){
+    
+try {
     document.getElementById('ImagenPrincipal').classList.add('AnimacionDeEntrada')
     document.getElementById('ImagenPrincipal').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${opcion.style.backgroundImage}`
-   
+    
     opcion.remove()
     Ciudades.forEach(Ciudad => {
         if(Ciudad.Imagen == opcion.style.backgroundImage){
@@ -134,7 +136,7 @@ function ImgPrincipalyRemover(Ciudades, opcion){
             NombreDestino.classList.add('AnimacionDeEntradaTexto')
             DescripcionDestino.classList.add('AnimacionDeEntradaTexto')
             CambiarInformaciónAdicional(Ciudad)
-
+    
             let Indice = Ciudades.indexOf(Ciudad)
                 Ciudades.splice(Indice, 1)
             Ciudades.push(Ciudad)
@@ -143,7 +145,7 @@ function ImgPrincipalyRemover(Ciudades, opcion){
         setTimeout(() => {
             document.getElementById('ImagenFondo').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${opcion.style.backgroundImage}`
         }, 810)
-
+    
         setTimeout(() => {
                 document.getElementById('ImagenPrincipal').classList.remove('AnimacionDeEntrada')
                 NombreDestino.classList.remove('AnimacionDeEntradaTexto')
@@ -151,6 +153,10 @@ function ImgPrincipalyRemover(Ciudades, opcion){
             
         }, 800)
        })
+} catch {
+    alert('La animaciones no se cargaron adecuadamente, sigue navegando por la información general de este país o retorcede y elige otro destino')
+}
+
 }
 
 
@@ -159,16 +165,13 @@ function ImgPrincipalyRemover(Ciudades, opcion){
 let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
 let HistoriaDestino = document.createElement ('p')
-let ImagenRestaurante = document.createElement ('img')
 let MasInfo = document.createElement ('p')
 
 
 function CambiarInformaciónAdicional(Ciudad){
-    
-    // document.getElementById('Restaurante').style.backgroundImage = ''
-    // document.getElementById('Hoteles').style.backgroundImage = ''
-    // document.getElementById('Atraccioes').style.backgroundImage = ''
-    document.getElementById('Restaurante').style.backgroundImage = Ciudad.ImagenRestaurante
+    document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenRestaurante}`
+    document.getElementById('Hoteles').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenHotel}`
+    document.getElementById('Atracciones').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenAtraccion}`
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
     DestinoNombre.id = "DestinoNombre"
