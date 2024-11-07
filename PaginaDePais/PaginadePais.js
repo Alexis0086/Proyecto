@@ -170,8 +170,6 @@ let RestaurantesInfo = document.createElement ('p')
 let HotelesInfo = document.createElement ('p')
 let AtraccionesInfo = document.createElement ('p')
 
-
-
 function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Ciudad.ImagenSec}`
     document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenRestaurante}`
@@ -181,8 +179,6 @@ function CambiarInformaciónAdicional(Ciudad){
     DestinoNombre.innerText = Ciudad.NombrePanoramica
     DestinoNombre.id = "DestinoNombre"
 
-//Hello, perdona, ando tomando descanso para hablar con mi nv No he cambiado nada. 
-
     InformacionDestino.id = "InformacionDestino"
     InformacionDestino.innerText = Ciudad.DescripcionPanoramica
 
@@ -191,6 +187,15 @@ function CambiarInformaciónAdicional(Ciudad){
 
     MasInfo.id = "MasInfo"
     MasInfo.innerText = Ciudad.MasInfo
+
+    MasInfo.id = "RestaurantesInfo"
+    RestaurantesInfo.innerText = Ciudad.RestaurantesInfo
+
+    HotelesInfo.id = "HotelesInfo"
+    HotelesInfo.innerText = Ciudad.HotelesInfo
+    
+    AtraccionesInfo.id = "AtraccionesInfo"
+    AtraccionesInfo.innerText = Ciudad.AtraccionesInfo
 
     document.getElementById('NombreyLogo').appendChild(DestinoNombre)
     document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
