@@ -14,6 +14,8 @@ const Destinos = {
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
             MasInfo: 'sudgeeuwdjoiwgedyued',
             ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
+            ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
+            ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")'
             
         },
         Dinant: {
