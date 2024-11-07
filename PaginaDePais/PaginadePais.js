@@ -166,15 +166,22 @@ let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
 let HistoriaDestino = document.createElement ('p')
 let MasInfo = document.createElement ('p')
+let RestaurantesInfo = document.createElement ('p')
+let HotelesInfo = document.createElement ('p')
+let AtraccionesInfo = document.createElement ('p')
+
 
 
 function CambiarInformaciónAdicional(Ciudad){
+    document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Ciudad.ImagenSec}`
     document.getElementById('Restaurante').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenRestaurante}`
     document.getElementById('Hoteles').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenHotel}`
     document.getElementById('Atracciones').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Ciudad.ImagenAtraccion}`
 
     DestinoNombre.innerText = Ciudad.NombrePanoramica
     DestinoNombre.id = "DestinoNombre"
+
+//Hello, perdona, ando tomando descanso para hablar con mi nv No he cambiado nada. 
 
     InformacionDestino.id = "InformacionDestino"
     InformacionDestino.innerText = Ciudad.DescripcionPanoramica
@@ -188,7 +195,9 @@ function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('NombreyLogo').appendChild(DestinoNombre)
     document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
     document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
-    document.getElementById('MasInformacion').appendChild(MasInfo)
+    document.getElementById('Restaurante').appendChild(RestaurantesInfo)
+    document.getElementById('Hoteles').appendChild(HotelesInfo)
+    document.getElementById('Atracciones').appendChild(AtraccionesInfo)
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 

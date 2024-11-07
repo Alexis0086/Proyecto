@@ -185,6 +185,10 @@ body{
     border: solid blue;
     height: 62vh;
     width: 99vw;
+    font-size: x-large;
+    background-color: black;
+    color: gold;
+    box-shadow: 12rem rgb(146, 19, 19);
 }
 
 #NombreyLogo {
@@ -242,7 +246,6 @@ iframe{
 
 #ImagenenSecundaria{
     position: absolute;
-    font-size: xx-large;
     font-weight: bolder;
     border: solid #eeff00fb;
     width: 65vw;
@@ -277,7 +280,7 @@ font-weight: bolder;
 border: solid fuchsia;
 width: 8vw;
 height: 64.3vh;
-top: 120rem;
+top: 140rem;
 }
 
 #Atracciones {
