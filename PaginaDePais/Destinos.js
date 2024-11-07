@@ -13,7 +13,7 @@ const Destinos = {
             DescripcionPanoramica: 'jwdkhwkjhfwhfjkwhfwhfkhfwjhwk',
             HistoriaDelDestino: 'Msuhwdsxbjbwsanxasjbdewjkj',
             MasInfo: 'sudgeeuwdjoiwgedyued',
-            // ImagenSec: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
+            ImagenSec: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
             ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
             ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")'

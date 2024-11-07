@@ -200,6 +200,7 @@ function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('NombreyLogo').appendChild(DestinoNombre)
     document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
     document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
+    document.getElementById('MasInformacion').appendChild(MasInfo)
     document.getElementById('Restaurante').appendChild(RestaurantesInfo)
     document.getElementById('Hoteles').appendChild(HotelesInfo)
     document.getElementById('Atracciones').appendChild(AtraccionesInfo)

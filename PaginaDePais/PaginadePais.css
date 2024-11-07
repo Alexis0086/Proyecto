@@ -195,7 +195,11 @@ body{
   width: 20.4vw;
   height: 61.3vh;
   border: solid rgb(17, 219, 255);
-  margin: 0vw 90vw 0vh 3%;
+  margin: 0vw 90vw 0vh 0%;
+}
+
+#NombreyLogo h1{
+    margin: 0vw 0vw 0vw 1.5vw;
 }
 
 #PanoramicaDeLugar{
@@ -248,9 +252,9 @@ iframe{
     position: absolute;
     font-weight: bolder;
     border: solid #eeff00fb;
-    width: 250px;
-    height: 300px;
-    margin: 0vw 150vh 0vw 0vw;
+    width: 15vw;
+    height: 40vh;
+    margin: 0vw 78vw 0vw 0vw;
 }
 
 #MasInformacion {
@@ -271,7 +275,7 @@ iframe{
     border: solid darkmagenta;
     width: 8vw;
     height: 64.3vh;
-    top: 100rem;
+    margin: 0vw 0vh 0vw 150vw;
 }
 
 #Hoteles {
