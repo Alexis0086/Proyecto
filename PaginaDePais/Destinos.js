@@ -86,7 +86,11 @@ NombrePanoramica: 'Kioto',
             ImagenSec: 'url("../ImagenesDestinos/Japon/Namba osaka (no 360).jpg")',
             ImagenRestaurante: 'url("../ImagenesDestinos/Japon/Shinjuku (tokyo).jpg")',
             ImagenHotel: 'url("../ImagenesDestinos/Japon/Mikayima Hiroshima.jpg")',
-            ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")'
+            ImagenAtraccion:'url("../ImagenesDestinos/Japon/Tsurugizaki, Kanagawa.jpg")',
+
+RestaurantesInfo: 'Gion Kappo Sakamoto, Nishiki Warai, Menbaka Fire Ramen, Hyotei, Kyoboshi, Kichi Kichi Omurice',
+            HotelesInfo: 'El Mitsui Garden Hotel Roppongi Tokyo Premier, Hotel New Otani Tokyo Garden Tower, Odaiba Hilton Tokyo, Park Hyatt Tokio, Imperial Hotel Tokio',
+            AtraccionesInfo: 'Templo Senso-Ji, Torre de Tokio, Parque Ueno, Skytree Tokio, Santuario Meiji (Meiji Jingu)',
 
         },
          
