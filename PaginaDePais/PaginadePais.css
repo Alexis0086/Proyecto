@@ -197,7 +197,6 @@ body{
   width: 20.4vw;
   height: 50.3vh;
   margin: 0vw 90vw 0vh 0%;
-  border: solid red;
 }
 
 #NombreyLogo h1{
@@ -220,7 +219,7 @@ body{
 }
 
 iframe{
-    box-shadow: 1vw 1vw 10vw 10vw white;
+    box-shadow: 0vw 0vw 2vw 0vw white;
     border-radius: 20px;
     height: 50vh;
     width: 50vw;
@@ -279,6 +278,8 @@ iframe{
   }
 
 #ImagenenSecundaria{
+    background-repeat: no-repeat;
+    background-size: 28vw 40vh;
     float: right;
     position: absolute;
     font-weight: bolder;
