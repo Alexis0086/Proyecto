@@ -35,6 +35,7 @@ try {
             for(let Pais in Destinos){
                 if(Bandera.id == `Imagen${Pais}`){
                     OpciónElegida = Pais
+                    localStorage.setItem('OpcionElegida', OpciónElegida)
                     ContenedorOpciones.innerHTML = ''
                     document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
                     MostrarDestinos()
