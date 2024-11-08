@@ -91,9 +91,7 @@ NombrePanoramica: 'Kioto',
 RestaurantesInfo: 'Gion Kappo Sakamoto, Nishiki Warai, Menbaka Fire Ramen, Hyotei, Kyoboshi, Kichi Kichi Omurice',
             HotelesInfo: 'The Ritz-Carlton, Kyoto, Hotel Granvia Kyoto, Hoshinoya Kyoto, Kyoto Hotel Okura, Four Seasons Hotel Kyoto',
 
-            AtraccionesInfo: 'Templo Kinkaku-ji (Pabellón de Oro),Santuario Fushimi Inari-taisha
-Templo Kiyomizu-dera, Bosque de Bambú de Arashiyama
-Castillo de Nijo',
+            AtraccionesInfo: 'Templo Kinkaku-ji (Pabellón de Oro),Santuario Fushimi Inari-taisha, Templo Kiyomizu-dera, Bosque de Bambú de Arashiyama, Castillo de Nijo',
 
         },
          
@@ -130,10 +128,10 @@ Castillo de Nijo',
         }
     },
     EmiratosArabes: {
-        ImagenPais: 'url("../ImagenesDestinos\Emiratos Araes\Imagen 1.jpg)',
+        ImagenPais: 'url("../ImagenesDestinos/Emiratos Araes/Imagen 1.jpg)',
         DescripcionPais: 'Un país de contrastes deslumbrantes, donde la tradición se encuentra con la modernidad en un entorno de lujo y hospitalidad.',
-        ImagenPais2: '<img src="../ImagenesDestinos\Emiratos Araes\Imagen pais 2.jpg" alt="">',
-        Bandera: '../ImagenesDestinos\Emiratos Araes\Logo.jpg',
+        ImagenPais2: '<img src="../ImagenesDestinos/Emiratos Araes/Imagen pais 2.jpg" alt="">',
+        Bandera: '../ImagenesDestinos/Emiratos Araes/Logo.jpg',
         Dubai: {
             Nombre: 'Dubai',
             Imagen: 'url("../ImagenesDestinos/EmiratosArabes/Dubai.jpg")',
