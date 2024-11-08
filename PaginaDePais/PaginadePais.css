@@ -196,9 +196,10 @@ body{
 /* Cada etiqueta le da estilo a uno de los divs, o las diferentes secciones de la página. */
 
 #NombreyLogo {
-  width: 20.4vw;
-  height: 50.3vh;
-  margin: 0vw 90vw 0vh 0%;
+    font-size: 2.5vw;
+    width: 20.4vw;
+    height: 50.3vh;
+    margin: 5vw 85vw 0vh 0.2vw;
 }
 
 #NombreyLogo h1{
@@ -228,6 +229,7 @@ iframe{
 }
 
 #DescripcionPanoramica{
+    align-content: center;
     margin: 0vw 0vh 0vw 74vw;
     height: 61.3vh;
     position: absolute;
@@ -252,17 +254,17 @@ iframe{
     position: absolute;
     height: 70vh;
     width: 99vw;
-
+    
     background-color: black;
     color: goldenrod;
-  }
+}
 
-  #InformacionDelLugar h1{
-      font-size: 2.5vw;
-      text-align: center;
-  }
+#InformacionDelLugar h1{
+    font-size: 2.5vw;
+    text-align: center;
+}
 
-  #InformacionDelLugar p{
+#InformacionDelLugar p{
     margin: 4vh 0vw 0vw 0vw;
     font-size: 1.5vw;
     text-align: center;
@@ -274,12 +276,13 @@ iframe{
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
-
+    
     width: 30vw;
     height: 45vh;
-  }
+}
 
 #ImagenenSecundaria{
+    box-shadow: 0vw 0vw 30px white;
     background-repeat: no-repeat;
     background-size: 29vw 45vh;
     float: right;

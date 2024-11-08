@@ -16,6 +16,13 @@ let BarraDeNavegacionDePaises = document.createElement('div')
 BarraDeNavegacionDePaises.id = 'BarraDeNavegaciondePaise'
 document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises) 
 
+let DestinoNombre = document.createElement('h1')
+let InformacionDestino = document.createElement('p')
+let HistoriaDestino = document.createElement ('p')
+let MasInfo = document.createElement ('p')
+let RestaurantesInfo = document.createElement ('p')
+let HotelesInfo = document.createElement ('p')
+let AtraccionesInfo = document.createElement ('p')
 
 try {
     for(let Pais in Destinos){
@@ -29,6 +36,25 @@ try {
     window.location.href = '../PaginaPrincipal/Pagina principal.html'
 }
 
+function ReiniciarInfo(Destino){
+    document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Destino.ImagenPais}`
+    AtraccionesInfo.innerText = 'Elige un destino para ver información'
+    RestaurantesInfo.innerText = 'Elige un destino para ver información'
+    HotelesInfo.innerText = 'Elige un destino para ver información'
+    HistoriaDestino.innerText = 'Selecciona un país para ver más información'
+    MasInfo.innerText = 'Selecciona un país para ver más información'
+    DestinoNombre.innerText = Destino.Nombre
+    InformacionDestino.innerText = Destino.DescripcionPais
+
+    document.getElementById('NombreyLogo').appendChild(DestinoNombre)
+    document.getElementById('DescripcionPanoramica').appendChild(InformacionDestino)
+    document.getElementById('HistoriaDelLugar').appendChild(HistoriaDestino)
+    document.getElementById('MasInformacion').appendChild(MasInfo)
+    document.getElementById('Restaurante').appendChild(RestaurantesInfo)
+    document.getElementById('Hoteles').appendChild(HotelesInfo)
+    document.getElementById('Atracciones').appendChild(AtraccionesInfo)
+}
+
 try {
     let Banderas = document.getElementById('BarraDeNavegaciondePaises').querySelectorAll('img')
     Banderas.forEach(Bandera => {
@@ -37,6 +63,7 @@ try {
                 if(Bandera.id == `Imagen${Pais}`){
                     OpciónElegida = Pais
                     localStorage.setItem('OpcionElegida', OpciónElegida)
+                    ReiniciarInfo(Destinos[Pais])
                     document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${localStorage.getItem('OpcionElegida')}?`
                     ContenedorOpciones.innerHTML = ''
                     document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
@@ -103,6 +130,7 @@ function MostrarDestinos(){
             if(Pais == OpciónElegida){
                 ContenedorOpciones.innerHTML = ''
                 Ciudades = []
+                ReiniciarInfo(Destinos[Pais])
                 document.getElementById('ImagenPrincipal').style. backgroundImage = ''
                 document.getElementById('ImagenFondo').style. backgroundImage = ''
                 RecorrerDestinos(Destinos[Pais])
@@ -140,23 +168,23 @@ try {
             NombreDestino.classList.add('AnimacionDeEntradaTexto')
             DescripcionDestino.classList.add('AnimacionDeEntradaTexto')
             CambiarInformaciónAdicional(Ciudad)
-    
+            
             let Indice = Ciudades.indexOf(Ciudad)
-                Ciudades.splice(Indice, 1)
+            Ciudades.splice(Indice, 1)
             Ciudades.push(Ciudad)
             ContenedorOpciones.appendChild(opcion)
         }
         setTimeout(() => {
             document.getElementById('ImagenFondo').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${opcion.style.backgroundImage}`
         }, 810)
-    
+        
         setTimeout(() => {
-                document.getElementById('ImagenPrincipal').classList.remove('AnimacionDeEntrada')
-                NombreDestino.classList.remove('AnimacionDeEntradaTexto')
-                DescripcionDestino.classList.remove('AnimacionDeEntradaTexto')
+            document.getElementById('ImagenPrincipal').classList.remove('AnimacionDeEntrada')
+            NombreDestino.classList.remove('AnimacionDeEntradaTexto')
+            DescripcionDestino.classList.remove('AnimacionDeEntradaTexto')
             
         }, 800)
-       })
+    })
 } catch {
     alert('La animaciones no se cargaron adecuadamente, sigue navegando por la información general de este país o retorcede y elige otro destino')
 }
@@ -165,15 +193,6 @@ try {
 
 
 //Crea las estiquetas que almacenarán información más a profundidad sobre la cuidad.
-
-let DestinoNombre = document.createElement('h1')
-let InformacionDestino = document.createElement('p')
-let HistoriaDestino = document.createElement ('p')
-let MasInfo = document.createElement ('p')
-let RestaurantesInfo = document.createElement ('p')
-let HotelesInfo = document.createElement ('p')
-let AtraccionesInfo = document.createElement ('p')
-
 //Realiza el cambio de la información adicional dependiendo del lugar que el usuario quiera visualizar.
 
 function CambiarInformaciónAdicional(Ciudad){
@@ -214,5 +233,4 @@ function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('PanoramicaDeLugar').innerHTML = Ciudad.Panoramica
 
     document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${Ciudad.Nombre}?`
-    console.log(Ciudad.Panoramica)
 }
