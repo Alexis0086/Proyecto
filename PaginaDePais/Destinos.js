@@ -130,11 +130,11 @@ RestaurantesInfo: 'Gion Kappo Sakamoto, Nishiki Warai, Menbaka Fire Ramen, Hyote
     EmiratosArabes: {
         ImagenPais: 'url("../ImagenesDestinos/Emiratos Araes/Imagen 1.jpg)',
         DescripcionPais: 'Un país de contrastes deslumbrantes, donde la tradición se encuentra con la modernidad en un entorno de lujo y hospitalidad.',
-        ImagenPais2: '<img src="../ImagenesDestinos/Emiratos Araes/Imagen pais 2.jpg" alt="">',
-        Bandera: '../ImagenesDestinos/Emiratos Araes/Logo.jpg',
+        ImagenPais2: '<img src="../ImagenesDestinos/Emiratos Arabes/Imagen pais 2.jpg" alt="">',
+        Bandera: '../ImagenesDestinos/Emiratos Arabes/Logo.jpg',
         Dubai: {
             Nombre: 'Dubai',
-            Imagen: 'url("../ImagenesDestinos/EmiratosArabes/Dubai.jpg")',
+            Imagen: 'url("../ImagenesDestinos/Emiratos Arabes/Dubai.jpg")',
             Descripcion: 'Dubai, la joya del desierto, es famosa por sus rascacielos impresionantes, centros comerciales de lujo y una vibrante vida nocturna.',
             Panoramica: '',
             NombrePanoramica: 'Burj Khalifa',
