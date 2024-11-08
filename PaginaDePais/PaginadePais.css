@@ -268,13 +268,13 @@ iframe{
 
 #HistoriaDelLugar {
     background-color: rgba(255, 225, 1, 0.063);
-    padding: 7vh 3vw;
+    padding: 4vh 3vw;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
 
     width: 30vw;
-    height: 40vh;
+    height: 45vh;
   }
 
 #ImagenenSecundaria{
@@ -295,7 +295,7 @@ iframe{
     font-size: xx-large;
     font-weight: bolder;
     width: 25vw;
-    height: 40vh;
+    height: 45vh;
     left: 38vw;
 }
 
