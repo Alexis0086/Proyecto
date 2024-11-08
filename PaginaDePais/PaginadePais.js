@@ -105,7 +105,7 @@ function MostrarDestinos(){
                 RecorrerDestinos(Destinos[Pais])
                 document.getElementById('ImagenPrincipal').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
                 document.getElementById('ImagenFondo').style. backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${Destinos[Pais].ImagenPais}`
-                NombreDestino.innerText = Pais
+                NombreDestino.innerText = Destinos[Pais].Nombre
                 DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
                 document.getElementById('PanoramicaDeLugar').innerHTML = Destinos[Pais].ImagenPais2
                 // Aqui se pone la informacion de caso base del Pais(cuando aun no se ha elegido una ciudad)

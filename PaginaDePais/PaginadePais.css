@@ -53,22 +53,26 @@ body{
 
 /* Nombre y descripcion del pais/ciudad */
 #NombreDestino{
+    border: solid red;
     text-align: start;
-    margin: 0vh 70vw 13vh 0vw;
+    margin: 25vh 80vw 0vh 0vw;
     z-index: 1;
-    position: absolute;
+    position: relative;
     color: rgba(255, 255, 255, 0.867);
-    font-size: 6vw;
+    font-size: 5vw;
+    height: 30vh;
     width: 25vw;
 }
 
 #DescripcionDestino{
     text-align: start;
-    margin: 17vh 65vw 0vh 0vw;
+    margin: 0vh 65vw 30vh 0vw;
     z-index: 1;
-    position: absolute;
+    position: relative;
     color: rgba(255, 255, 255, 0.841);
     font-size: 1.3vw;
+    border: solid red;
+    height: 20vh;
     width: 27vw;
 }
 
