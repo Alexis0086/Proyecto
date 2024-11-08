@@ -230,7 +230,7 @@ iframe{
     height: 61.3vh;
     position: absolute;
     width: 20.4vw;
-    padding: 5vh 1vw;
+    padding: 15vh 1vw;
 }
 
 #DescripcionPanoramica p{
@@ -299,8 +299,10 @@ iframe{
     left: 38vw;
 }
 
+
+
 #LugaresAVisitar{
-    padding: 2vw;
+    padding: 4vw 4vw;
     color: goldenrod;
     background-color: black;
     display: flex;
@@ -308,6 +310,20 @@ iframe{
     position: absolute;
     height: 70vh;
     width: 99vw
+}
+
+#LugaresAVisitar h1{
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 3vw;
+    color: white;
+}
+
+#LugaresAVisitar p{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
+    color: white;
 }
 
 #Restaurante {
