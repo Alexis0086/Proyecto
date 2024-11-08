@@ -36,6 +36,7 @@ try {
                 if(Bandera.id == `Imagen${Pais}`){
                     OpciónElegida = Pais
                     localStorage.setItem('OpcionElegida', OpciónElegida)
+                    document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${localStorage.getItem('OpcionElegida')}?`
                     ContenedorOpciones.innerHTML = ''
                     document.getElementById('ImagenFondo').classList.add('AnimacionDeEntradaContenedor')
                     MostrarDestinos()
@@ -170,7 +171,6 @@ let MasInfo = document.createElement ('p')
 let RestaurantesInfo = document.createElement ('p')
 let HotelesInfo = document.createElement ('p')
 let AtraccionesInfo = document.createElement ('p')
-document.getElementById('DeberiasVisitar').innerText = `¿Por qué deberias visitar ${OpciónElegida}?`
 
 function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Ciudad.ImagenSec}`

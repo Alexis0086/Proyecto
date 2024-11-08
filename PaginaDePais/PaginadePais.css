@@ -220,6 +220,7 @@ body{
 }
 
 iframe{
+    box-shadow: 1vw 1vw 10vw 10vw white;
     border-radius: 20px;
     height: 50vh;
     width: 50vw;
@@ -298,44 +299,49 @@ iframe{
 }
 
 #LugaresAVisitar{
+    padding: 2vw;
     color: goldenrod;
     background-color: black;
     display: flex;
     margin-top: 230vh;
     position: absolute;
-    height: 65vh;
+    height: 70vh;
     width: 99vw
 }
 
 #Restaurante {
+    background-repeat: no-repeat;
+    background-size: 33vw 64.3vh;
     flex: 1;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
-    border: solid darkmagenta;
-    width: 33vw;
-    height: 64.3vh;
-    margin: 0vw vw 0vw 0vw;
+    width: 30vw;
+    height: 58vh;
+    margin: 0vw 0vw 0vw 0vw;
 }
 
 #Hoteles {
+    background-repeat: no-repeat;
+    background-size: 33vw 64.3vh;
     flex: 1;
 position: absolute;
 font-size: xx-large;
 font-weight: bolder;
-border: solid fuchsia;
-width: 33vw;
-height: 64.3vh;
-margin: 0vw 0vw 0vw 33vw;
+
+width: 30vw;
+height: 58vh;
+margin: 0vw 0vw 0vw 32.5vw;
 }
 
 #Atracciones {
     flex: 1;
+    background-repeat: no-repeat;
+    background-size: 33vw 64.3vh;
 position: absolute;
 font-size: xx-large;
 font-weight: bolder;
-border: solid green;
-width: 33vw;
-height: 64.3vh;
-margin: 0vw 0vh 0vw 66vw;
+width: 30vw;
+height: 58vh;
+margin: 0vw 0vh 0vw 65vw;
 }
