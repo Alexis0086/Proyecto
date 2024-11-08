@@ -16,10 +16,6 @@ let BarraDeNavegacionDePaises = document.createElement('div')
 BarraDeNavegacionDePaises.id = 'BarraDeNavegaciondePaise'
 document.getElementById('ImagenFondo').appendChild(BarraDeNavegacionDePaises) 
 
- let CasoBase = document.createElement ('div')
-CasoBase.id = 'CasoBase'
-
-
 
 try {
     for(let Pais in Destinos){
