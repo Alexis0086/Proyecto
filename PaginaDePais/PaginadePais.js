@@ -162,7 +162,7 @@ try {
 }
 
 
-//Alexis de aquí pa abajo es lo suyo
+//Crea las estiquetas que almacenarán información más a profundidad sobre la cuidad.
 
 let DestinoNombre = document.createElement('h1')
 let InformacionDestino = document.createElement('p')
@@ -171,6 +171,8 @@ let MasInfo = document.createElement ('p')
 let RestaurantesInfo = document.createElement ('p')
 let HotelesInfo = document.createElement ('p')
 let AtraccionesInfo = document.createElement ('p')
+
+//Realiza el cambio de la información adicional dependiendo del lugar que el usuario quiera visualizar.
 
 function CambiarInformaciónAdicional(Ciudad){
     document.getElementById('ImagenenSecundaria').style.backgroundImage = `${Ciudad.ImagenSec}`
