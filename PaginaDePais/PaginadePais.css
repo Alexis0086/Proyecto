@@ -279,12 +279,12 @@ iframe{
 
 #ImagenenSecundaria{
     background-repeat: no-repeat;
-    background-size: 28vw 40vh;
+    background-size: 29vw 45vh;
     float: right;
     position: absolute;
     font-weight: bolder;
-    width: 28vw;
-    height: 40vh;
+    width: 29vw;
+    height: 45vh;
     margin: 0vw 0vw 0vw 61vw;
 }
 
@@ -308,7 +308,7 @@ iframe{
     display: flex;
     margin-top: 230vh;
     position: absolute;
-    height: 70vh;
+    height: 60vh;
     width: 99vw
 }
 
@@ -322,43 +322,45 @@ iframe{
 #LugaresAVisitar p{
     margin-top: 2vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
 }
 
 #Restaurante {
+    padding: 0vh 2vw;
     background-repeat: no-repeat;
-    background-size: 33vw 64.3vh;
+    background-size: 28vw 40vh;
     flex: 1;
     position: absolute;
     font-size: xx-large;
     font-weight: bolder;
-    width: 30vw;
-    height: 58vh;
+    width: 28vw;
+    height: 40vh;
     margin: 0vw 0vw 0vw 0vw;
 }
 
 #Hoteles {
+    padding: 0vh 2vw;
     background-repeat: no-repeat;
-    background-size: 33vw 64.3vh;
+    background-size: 28vw 40vh;
     flex: 1;
-position: absolute;
-font-size: xx-large;
-font-weight: bolder;
-
-width: 30vw;
-height: 58vh;
-margin: 0vw 0vw 0vw 32.5vw;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 28vw;
+    height: 40vh;
+    margin: 0vw 0vw 0vw 31.5vw;
 }
 
 #Atracciones {
+    padding: 0vh 2vw;
     flex: 1;
     background-repeat: no-repeat;
-    background-size: 33vw 64.3vh;
-position: absolute;
-font-size: xx-large;
-font-weight: bolder;
-width: 30vw;
-height: 58vh;
-margin: 0vw 0vh 0vw 65vw;
+    background-size: 28vw 40vh;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 28vw;
+    height: 40vh;
+    margin: 0vw 0vh 0vw 63vw;
 }
