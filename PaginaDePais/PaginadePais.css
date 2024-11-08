@@ -193,6 +193,8 @@ body{
     box-shadow: 12rem rgb(146, 19, 19);
 }
 
+/* Cada etiqueta le da estilo a uno de los divs, o las diferentes secciones de la página. */
+
 #NombreyLogo {
   width: 20.4vw;
   height: 50.3vh;
