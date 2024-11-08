@@ -111,6 +111,7 @@ function MostrarDestinos(){
                 DescripcionDestino.innerText = Destinos[Pais].DescripcionPais
                 document.getElementById('PanoramicaDeLugar').innerHTML = Destinos[Pais].ImagenPais2
                 // Aqui se pone la informacion de caso base del Pais(cuando aun no se ha elegido una ciudad)
+                
             }
         }
     } catch {
