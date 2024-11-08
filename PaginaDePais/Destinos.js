@@ -337,7 +337,7 @@ const Destinos = {
 
     Noruega: {
         Nombre: 'Noruega',
-        ImagenPais: 'url("../Imagenes_Noruega/Bryggen.jpeg")',
+        ImagenPais: 'url("../ImagenesDestinos/Noruega/Bryggen.jpeg")',
         ImagenPais2: ' <img src="../ImagenesDestinos/Noruega/Nordland360.jpg" alt="">',
         DescripcionPais: 'Noruega es un país escandinavo que incluye montañas, glaciares y profundos fiordos costeros.',
         Bandera: '../ImagenesDestinos/Noruega/banderanoru.jpg',
@@ -389,7 +389,7 @@ const Destinos = {
             MasInfo: 'El primero en nombrar «las siete montañas» fue Ludvig Holberg, inspirándose en las siete colinas de Roma.',
             ImagenSec: 'url("../ImagenesDestinos/Noruega/Bergen sec.jpeg")',
             ImagenRestaurante: 'url("../ImagenesDestinos/Noruega/Bergen rest.jpeg")',
-            ImagenHotel: 'url("../Imagenes_Noruega/bergen hotel.jpeg")',
+            ImagenHotel: 'url("../ImagenesDestinos/Noruega/bergen hotel.jpeg")',
             ImagenAtraccion:'url("../ImagenesDestinos/Noruega/bergen atra.jpeg")',
             RestaurantesInfo: 'Bryggeloftet & Stuene, Lysverket, Cornelius Sjømatrestaurant, Enhjørningen, To Kokker.',
             HotelesInfo: 'First Hotel Marin es una excelente opción si planeas visitar Bergen. El alojamiento ofrece un ambiente tranquilo con muchas comodidades para los viajeros y también convence por la combinación ideal de relación calidad-precio',
@@ -425,7 +425,7 @@ const Destinos = {
             DescripcionPanoramica: 'Oslo continuó su expansión a lo largo del siglo XX, experimentando transformaciones urbanísticas y sociales.',
             HistoriaDelDestino: 'Oslo, la capital de Noruega, tiene una historia que se remonta a más de 1,000 años, desde su fundación en la Edad Media',
             MasInfo: 'La historia de Oslo comienza en el siglo XI, cuando fue fundada por el rey Harald Hardrada',
-            ImagenSec: 'url("../Imagenes_Noruega/Opera de Oslo.jpeg")',
+            ImagenSec: 'url("../ImagenesDestinos/Noruega/Opera de Oslo.jpeg")',
             ImagenRestaurante: 'url("../ImagenesDestinos/Noruega/descarga (4).jpeg")',
             ImagenHotel: 'url("../ImagenesDestinos/Noruega/descarga (5).jpeg")',
             ImagenAtraccion:'url("../ImagenesDestinos/Noruega/descarga (6).jpeg")',
